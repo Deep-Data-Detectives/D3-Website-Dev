@@ -9,12 +9,14 @@ import AppAppBar from './modules/views/AppAppBar.jsx';
 import withRoot from './modules/withRoot.jsx';
 // import HeroSlider from "./MyComponents/HeroSlider.jsx";
 import ProductHero from "./modules/views/ProductHero.jsx";
+import Mission from "./MyComponents/Mission.jsx";
 
 function Index() {
     return (<React.Fragment>
         <AppAppBar/>
         {/*<HeroSlider/>*/}
-        <ProductHero />
+        <ProductHero/>
+        <Mission/>
         <ProductHowItWorks/>
         <ProductValues/>
         <ProductCategories/>

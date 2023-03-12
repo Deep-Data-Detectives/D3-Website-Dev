@@ -11,7 +11,7 @@ import Box from "@mui/material/Box";
 
 function AppAppBar() {
     return (<div>
-        <AppBar position="fixed">
+        <AppBar>
             <Toolbar>
                 <Box marginX={2}>
                     <img src={Logo} alt="logo" width="60" height="60"/>
