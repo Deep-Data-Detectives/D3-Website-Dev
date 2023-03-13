@@ -1,0 +1,67 @@
+.blogContent p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  
+  }
+  .blogContent h2{
+  
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .blogContent a{
+    color: blue;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #1f465c;
+    opacity: 0.95;
+    font-family: "Inter",sans-serif;
+
+
+  }
+  
+  .navbar:hover {
+    background-color: #9bb8c263;
+    backdrop-filter: blur(10px);
+  }
+  
+  .my-element {
+    border-radius: 10px;
+  }
+
+  .my-colour{
+    color: darkblue;
+  }
+
+  .main-div{
+    font-family: "Inter",sans-serif
+  }
+
+  .font-sizes{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .tables1{
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    color: rgba(88,80,80,1);
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .background1{
+    background-color: lightblue;
+  }
+
