@@ -29,7 +29,8 @@
   }
   
   .my-element {
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888;
   }
 
   .my-colour{
@@ -59,7 +60,39 @@
     width: 100%;
   }
 
+  .tables2{
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    color: rgba(88,80,80,1);
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    padding: 0;
+    border: 1px solid black;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .rows1{
+    border: 1px solid black;
+
+  }
+
   .background1{
     background-color: lightblue;
   }
 
+  .image_size{
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .image_size2{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .image_size3{
+    max-width: 350px;
+    max-height: 350px;
+  }
