@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Pilots from "./Pilots";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Story from "./Story";
 
 const Pages = () => {
     return (
@@ -15,6 +16,7 @@ const Pages = () => {
                 <Route exact path="/" element={<Home/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/pilots" element={<Pilots/>}/>
+                <Route path="/story" element={<Story/>}/>
             </Routes>
             <Footer/>
         </Router>

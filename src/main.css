@@ -10,13 +10,13 @@
   }
   
   .blogContent a{
-    color: blue;
+    color: #000099;
   }
 
   .navbar {
     background-color: #ffffff;
     transition: background-color 0.3s ease;
-    box-shadow: 0 0 10px #1f465c;
+    box-shadow: 0 0 10px #A0A0A0;
     opacity: 0.95;
     font-family: "Inter",sans-serif;
 
@@ -34,7 +34,7 @@
   }
 
   .my-colour{
-    color: darkblue;
+    color: #000099;
   }
 
   .main-div{
