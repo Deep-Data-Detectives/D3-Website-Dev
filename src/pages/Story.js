@@ -4,8 +4,7 @@ import ourStory from "./images/Our Story _D3 Website.png";
 import {NavLink} from "react-router-dom";
 
 function Story() {
-    return (
-        <Container maxWidth="xl">
+    return (<Container maxWidth="xl">
             <Typography variant="h4" gutterBottom>
                 Our Story
             </Typography>
@@ -65,8 +64,7 @@ function Story() {
             <Typography paragraph component={NavLink} to={"/contact"}>
                 SPEAK TO A MEMBER OF OUR TEAM
             </Typography>
-        </Container>
-    );
+        </Container>);
 }
 
 export default Story;
