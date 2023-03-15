@@ -1,4 +1,6 @@
 import * as React from "react";
+import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import img from "../images/img.png"
 import img2 from "../images/Instagram WINNER post - 34.png"
 import img3 from "../images/live.JPG"
@@ -39,17 +41,17 @@ const Progress = () => {
                             </td>
                         </tr>
                         <tr>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>We celebrate small wins and recognize our D3s with rewards and economic opportunities. 
+                            <td style={{padding: "10px", verticalAlign: "top"}}>We celebrate small wins and recognize our D3s with rewards and economic opportunities.<br/> 
 
-Learn about our Impact and Assessment (links to corresponding page) 
-
-                            </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>Inspiring storytelling feeds D3 players the knowledge to understand how they fit in their roles presenting opportunities for user education in an immersive game-play.  Learn more (links to Landing Page)
-
-
+                            <HashLink className="my-colour underline" to='../pilots#first'>Learn about</HashLink> our Impact and Assessment.
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>Every woman deserves a voice and the opportunity to be heard, respected, and valued. Join our contest dedicated for women to share their stories, ideas, and perspectives.   Learn more (links to Pilot 3 Page)
+                            <td style={{padding: "10px", verticalAlign: "top"}}>Inspiring storytelling feeds D3 players the knowledge to understand how they fit in their roles presenting opportunities for user education in an immersive game-play. <HashLink className="my-colour underline" to='../pilots#second'>Learn more</HashLink>
+
+
+
+                            </td>
+                            <td style={{padding: "10px", verticalAlign: "top"}}>Every woman deserves a voice and the opportunity to be heard, respected, and valued. Join our contest dedicated for women to share their stories, ideas, and perspectives. <HashLink className="my-colour underline" to='../pilots#third'>Learn more</HashLink>
 
 
                             </td>
