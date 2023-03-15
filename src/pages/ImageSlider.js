@@ -12,7 +12,7 @@ const ImageSlider = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div style={{bottom: '10px', right: '10px', width: '700px', height: '190px', overflow: 'hidden', borderRadius: '10px', boxShadow: '0 0 10px rgba(0,0,0,0.3)', zIndex: '1' }}>
+    <div style={{bottom: '10px', right: '10px', maxwidth: '700px', height: '190px', overflow: 'hidden', borderRadius: '10px', boxShadow: '0 0 10px rgba(0,0,0,0.3)', zIndex: '1' }}>
       <div
         style={{
           display: 'flex',
@@ -29,7 +29,7 @@ const ImageSlider = ({ images }) => {
             key={image}
             src={image}
             alt="Image"
-            style={{ width: '300px', height: '190px', objectFit: 'cover', filter: (index - currentImageIndex) == 1 ? 'none' : 'blur(1px)',marginRight: '50px', transition: 'filter 0.5s ease-out'}}
+            style={{ width: '300px', height: '190px', objectFit: 'cover', filter: (index - currentImageIndex) == 1,marginRight: '50px', transition: 'filter 0.5s ease-out'}}
           />
         ))}
       </div>

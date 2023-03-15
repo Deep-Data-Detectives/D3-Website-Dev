@@ -1,11 +1,6 @@
 import * as React from "react";
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import img from "../images/img.png"
-import img2 from "../images/Instagram WINNER post - 34.png"
-import img3 from "../images/live.JPG"
-import img4 from "../images/embrace equity for women.JPG"
-import { List } from 'semantic-ui-react'
 
 const Offer = () => {
     return (<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-8">
