@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import ImageSlider from './ImageSlider';
 import Progress from "./section/Progress";
+import Offer from "./section/Offer";
 
 const images = ['data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=', 'https://i.ibb.co/4M6zKg7/1.png', "https://i.ibb.co/16fD2F7/2.png", "https://i.ibb.co/JF4QJQ5/3.png", "https://i.ibb.co/Rgyvj39/4.png"];
 
@@ -15,11 +16,11 @@ const Home = () => {
                     DATA DETECTIVES (D3)</h1><br/>
                 <p className="mb-20 my-colour font-extrabold lg:text-xl">Driving Climate Action and Economic
                     Prosperity for All with Data and AI</p>
-                <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+                <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
                     <span class="text-black-400"><strong>PLAY.</strong> Turn Climate Action into a Fun and Rewarding Game While Building a Sustainable Community</span><br/><br/>
                     <span class="text-sm my-colour text-black-400">Every 10 points = We raise $10 for a D3 Community to teach skills and create jobs where needed the most</span><br/><br/>
 
-                    <iframe class="my-element"
+                    <iframe className="my-element"
                             src="https://drive.google.com/file/d/1T--HhzUOiygIKvUCjSzV2L4M_RedRXSQ/preview"
                             width="750" height="450"/>
                     <br/>
@@ -127,9 +128,18 @@ const Home = () => {
                     </table>
                 </div>
             </div>
+            <Progress/><br></br><br></br>
 
-            <Progress/>
+                <div className="text-center"> 
+                    <h2 className="font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
+                    <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2><br></br>
+                    <iframe className="mx-auto text-center lg:max-w-screen-lg my-element"
+                                    src="https://drive.google.com/file/d/1YA50tYCoB-EZQk_wAcjDTmm3fUEGucff/preview"
+                                    width="750" height="450"/>
 
+                </div><br/><br/><br/>
+
+            <Offer/>
         </section>
 
     </div>);
