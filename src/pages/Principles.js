@@ -11,7 +11,7 @@ function Principles() {
             of untapped individuals and communities facing climate hazards, and social and economic
             vulnerabilities.</p>
         <h3 className="text-2xl font-bold mb-4">Our Data Principles include:</h3>
-        <ul className="list-disc list-inside mb-6">
+        <ol className="list-decimal list-inside mb-6">
             <li className="text-lg mb-2">Definition of social and economic issues: We collaborate with grassroots
                 organizations to ensure that everyone has a driving seat in the decision-making process by
                 assessing, designing and implementing AI solutions.
@@ -28,7 +28,7 @@ function Principles() {
                 lives, it is important to consider the ethical implications of AI systems. Transparency and fairness
                 are critical considerations at our core when designing and implementing AI systems.
             </li>
-        </ul>
+        </ol>
         <h3 className="text-2xl font-bold mb-4">We follow Global Responsible Best Practices for implementing
             AI:</h3>
         <ul className="list-disc list-inside mb-6">
