@@ -7,7 +7,7 @@ import Offer from "./section/Offer";
 const images = ['data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=', 'https://i.ibb.co/4M6zKg7/1.png', "https://i.ibb.co/16fD2F7/2.png", "https://i.ibb.co/JF4QJQ5/3.png", "https://i.ibb.co/Rgyvj39/4.png"];
 
 const Home = () => {
-    return (<div id = 'main' className='main-div'>
+    return (<div id='main' className='main-div'>
 
         <section>
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -21,13 +21,15 @@ const Home = () => {
                     <span class="text-sm my-colour text-black-400">Every 10 points = We raise $10 for a D3 Community to teach skills and create jobs where needed the most</span><br/><br/>
                     <div style={{height: "450px"}}>
 
-                    <iframe className="my-element"
-                            src="https://drive.google.com/file/d/1T--HhzUOiygIKvUCjSzV2L4M_RedRXSQ/preview"
-                            height="100%" width="100%" />
-                    </div><br/>
+                        <iframe className="my-element"
+                                src="https://drive.google.com/file/d/1T--HhzUOiygIKvUCjSzV2L4M_RedRXSQ/preview"
+                                height="100%" width="100%"/>
+                    </div>
+                    <br/>
 
 
-                    <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                    <div
+                        className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                         <Link to=""
                               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -48,7 +50,7 @@ const Home = () => {
             <div style={{height: "200px", zIndex: '0'}}
                  className="flex flex-col mb-4 lg:mb-6 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                         <ImageSlider images={images} interval={5000}
-                                                    height="100%" width="100%" />
+                                     height="100%" width="100%"/>
                         </div>
             <span>We envision a world where everyone can have a seat at the table to discover the right data and use AI to create jobs, learn new skills and help communities be more resilient.</span>
             </span>
@@ -122,7 +124,7 @@ const Home = () => {
 
                             </td>
                             <td style={{padding: "10px", verticalAlign: "top"}}>As AI shows great promise, Deep Data
-                                Detectives principles align with human good intentions and values.
+                                Detectives <Link className="my-colour underline" to="/principles">principles</Link> align with human good intentions and values.
 
 
                             </td>
@@ -133,16 +135,17 @@ const Home = () => {
             </div>
             <Progress/><br></br><br></br>
 
-                <div className="text-center"> 
-                    <h2 className="font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
-                    <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2><br></br>
-                    <div style={{height: "450px"}}>
+            <div className="text-center">
+                <h2 className="font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
+                <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2><br></br>
+                <div style={{height: "450px"}}>
                     <iframe className="mx-auto text-center lg:max-w-screen-lg my-element"
-                                    src="https://drive.google.com/file/d/1YA50tYCoB-EZQk_wAcjDTmm3fUEGucff/preview"
-                                    height="100%" width="50%" />
-                        </div>
+                            src="https://drive.google.com/file/d/1YA50tYCoB-EZQk_wAcjDTmm3fUEGucff/preview"
+                            height="100%" width="50%"/>
+                </div>
 
-                </div><br/><br/><br/>
+            </div>
+            <br/><br/><br/>
 
             <Offer/>
         </section>

@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Story from "./Story";
 import Dollars from "./Dollars";
 import Internships from "./Internships";
+import Principles from "./Principles";
 
 const Pages = () => {
     return (
@@ -21,6 +22,7 @@ const Pages = () => {
                 <Route path="/story" element={<Story/>}/>
                 <Route path="/dollars" element={<Dollars/>}/>
                 <Route path="/internships" element={<Internships/>}/>
+                <Route path="/principles" element={<Principles/>}/>
             </Routes>
             <Footer/>
         </Router>
