@@ -79,6 +79,20 @@
     table-layout: fixed;
   }
 
+  .tables3{
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    padding: 0;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0 auto;
+    width: 100%;
+    table-layout: fixed;
+    max-width: 1000px;
+  }
+
   .rows1{
     border: 1px solid black;
 

@@ -7,7 +7,7 @@ const Internships = () => {
     return (<Container id = 'main' maxWidth="xl main-div">
         <br/><br/><br/>
         <div className="mx-auto max-w-screen-xl text-center"><br/>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h3" gutterBottom>
                 <strong>Deep Data Detectives (D3) Internships</strong>
             </Typography>
         </div><br/>

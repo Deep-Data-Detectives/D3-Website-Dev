@@ -67,7 +67,10 @@ const Offer = () => {
                                 </ul>
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>Every woman deserves a voice and the opportunity to be heard, respected, and valued. Join our contest dedicated for women to share their stories, ideas, and perspectives. <HashLink className="my-colour underline" to='../pilots#third'>Learn more</HashLink>
+                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>Partnerships</strong><br/> 
+
+                            <HashLink className="my-colour underline" to='../partnerships#main'>EXPLORE MORE</HashLink><br/><br/>
+
                             </td>
                         </tr>
                         <tr>
