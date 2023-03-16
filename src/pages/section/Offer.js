@@ -16,7 +16,7 @@ const Offer = () => {
                         </thead>
                         <tbody>
                         <tr className="rows1">
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>“Dollars for Hours”</strong><br/>(Volunteer Program)<br/> Register your interest<br/><br/> 
+                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>“Dollars for Hours”</strong><br/>(Volunteer Program)<br/><HashLink className="my-colour underline" to='../dollars#main'>Register your interest</HashLink><br/><br/> 
                             <ul className="ullist1">
                                 <li>Game Design</li>
                                 <li>Software Development</li>
@@ -46,7 +46,7 @@ const Offer = () => {
                         <tr className="rows1">
                             <td style={{padding: "10px", verticalAlign: "top"}}><strong>Internships</strong><br/> 
 
-                            <Link  id='second' className="my-colour underline" to="/contact">Register your interest</Link><br/><br/>
+                            <HashLink className="my-colour underline" to='../internships#main'>Register your interest</HashLink><br/><br/>
                             <ul className="ullist1">
                                 <li>Software Engineering</li>
                                 <li>Game Design</li>

@@ -6,12 +6,11 @@ import {NavLink} from "react-router-dom";
 function Story() {
     return (<Container maxWidth="xl">
         <div className="mx-auto max-w-screen-xl text-center my-colour"><br/><br/>
-            <Typography variant="h4" gutterBottom>
-                OUR STORY
-            </Typography>
+        <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">OUR STORY</h1><br/>
+
         </div>
         <br/>
-        <Box className="my-element" component="img" src={ourStory} alt="Our Story" sx={{width: '100%'}}/><br/><br/>
+        <Box className="my-element mx-auto" component="img" src={ourStory} alt="Our Story" sx={{width: '100%'}}/><br/><br/>
         <Typography paragraph>
             DEEP DATA DETECTIVES (D3) was founded with a mission to empower people to have a voice in the
             development of AI to accelerate Global Goals by 2030.

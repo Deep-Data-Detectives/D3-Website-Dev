@@ -7,7 +7,7 @@ import Offer from "./section/Offer";
 const images = ['data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=', 'https://i.ibb.co/4M6zKg7/1.png', "https://i.ibb.co/16fD2F7/2.png", "https://i.ibb.co/JF4QJQ5/3.png", "https://i.ibb.co/Rgyvj39/4.png"];
 
 const Home = () => {
-    return (<div className='main-div'>
+    return (<div id = 'main' className='main-div'>
 
         <section>
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">

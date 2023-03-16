@@ -7,6 +7,8 @@ import Pilots from "./Pilots";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Story from "./Story";
+import Dollars from "./Dollars";
+import Internships from "./Internships";
 
 const Pages = () => {
     return (
@@ -17,6 +19,8 @@ const Pages = () => {
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/pilots" element={<Pilots/>}/>
                 <Route path="/story" element={<Story/>}/>
+                <Route path="/dollars" element={<Dollars/>}/>
+                <Route path="/internships" element={<Internships/>}/>
             </Routes>
             <Footer/>
         </Router>
