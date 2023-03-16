@@ -46,7 +46,7 @@ function Story() {
             Deep Data Detectives (D3) is working at building the gaming community providing value to users,
             volunteers, sponsors and partners. These are our achievements:
         </Typography>
-        <ul className="list-disc list-inside text-lg">
+        <ul className="list-disc list-inside text-gray-500">
             <li>Three D3 Adventures Grants since inception on October 1, 2022 for three Black Teachers in
                 non-metropolitan areas at risk of wildfires, floating and drought.
             </li>

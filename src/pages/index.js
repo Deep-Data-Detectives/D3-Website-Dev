@@ -10,6 +10,7 @@ import Story from "./Story";
 import Dollars from "./Dollars";
 import Internships from "./Internships";
 import Partnerships from "./Partnerships";
+import Principles from "./Principles";
 
 const Pages = () => {
     return (
@@ -23,6 +24,7 @@ const Pages = () => {
                 <Route path="/dollars" element={<Dollars/>}/>
                 <Route path="/internships" element={<Internships/>}/>
                 <Route path="/partnerships" element={<Partnerships/>}/>
+                <Route path="/principles" element={<Principles/>}/>
             </Routes>
             <Footer/>
         </Router>
