@@ -251,7 +251,7 @@ const Home = () => {
                     Ready To Join Forces With US ?
                 </Typography>
                 <Typography className='text-center' variant="h6" gutterBottom>
-                    Help us continue our work. Donate
+                    Help us continue our work. <Link className="my-colour" to=""><u>Donate</u></Link>
                 </Typography><br/>
                 <Typography className='text-center' variant="h5" gutterBottom>
                     <Link to=""
