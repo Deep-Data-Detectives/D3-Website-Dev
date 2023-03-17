@@ -76,7 +76,7 @@ const Offer = () => {
                         <tr>
                             <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong>Fellowships</strong><br/> 
 
-                            <Link  id='second' className="my-colour underline" to="/contact">Register your interest</Link><br/><br/>
+                            <Link  id='second' className="my-colour underline" to="/fellowship">Register your interest</Link><br/><br/>
                             <ul className="ullist1">
                                 <li>Research</li>
                                 <li>Embedding Equity in Digital Communities</li>

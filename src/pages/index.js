@@ -13,6 +13,7 @@ import Partnerships from "./Partnerships";
 import Principles from "./Principles";
 import DEI from "./section/DEI";
 import Privacy from "./section/Privacy";
+import Fellowship from "./Fellowship";
 
 const Pages = () => {
     return (
@@ -29,6 +30,7 @@ const Pages = () => {
                 <Route path="/principles" element={<Principles/>}/>
                 <Route path="/diversity" element={<DEI/>}/>
                 <Route path="/privacy" element={<Privacy/>}/>
+                <Route path="/fellowship" element={<Fellowship/>}/>
             </Routes>
             <Footer/>
         </Router>
