@@ -36,6 +36,9 @@
     border-radius: 15px;
     box-shadow: 10px 10px 5px #141414;
   }
+  .new-element {
+    border-radius: 10px;
+  }
 
   .my-colour{
     color: #000099;
@@ -93,6 +96,21 @@
     max-width: 1000px;
   }
 
+  .tables4{
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    padding: 0;
+    border: 1px solid black;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0 auto;
+    width: 90%;
+    table-layout: fixed;
+    max-width: 1000px;
+  }
+
   .rows1{
     border: 1px solid black;
 
@@ -120,3 +138,64 @@
     list-style-type: disc;
     margin-left: 18px;
   }
+
+  .spinner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+
+  .user-tablecontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #eee;
+  }
+  
+  .user-table input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .user-table button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .success-message {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #007bff;
+    text-align: center;
+  }
+  

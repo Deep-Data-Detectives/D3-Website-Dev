@@ -25,28 +25,28 @@ const Progress = () => {
                         </tr>
                         </thead>
                         <tbody>
-                        <tr className="rows1">
-                            <td style={{padding: "10px", verticalAlign: "top"}}><img style={{maxHeight: "250px"}} className="my-element" src={img2}/><br></br>
+                        <tr className="rows1" >
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><img style={{maxHeight: "250px"}} className="my-element" src={img2}/><br></br>
                             (D3) Adventures is a Prize Winner in the Designing for Digital Thriving Challenge hosted by @ideo @riotgames @FairPlayA @CooneyCenter @hopelab @scefdn.
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>If you can see it, you can live it!<br></br><br></br><img style={{maxHeight: "250px"}} className=" my-element" src={img3}/>
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}>If you can see it, you can live it!<br></br><br></br><img style={{maxHeight: "250px"}} className=" my-element" src={img3}/>
 
 
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>Embrace Equity! <br></br><br></br><img style={{maxHeight: "350px"}} className="my-element" src={img4}/>
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}>Embrace Equity! <br></br><br></br><img style={{maxHeight: "350px"}} className="my-element" src={img4}/>
 
 
                             </td>
                         </tr>
                         <tr>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>We celebrate small wins and recognize our D3s with rewards and economic opportunities.<br/> 
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}>We celebrate small wins and recognize our D3s with rewards and economic opportunities.<br/> 
 
                             <HashLink className="my-colour underline" to='../pilots#first'>Learn about</HashLink> our Impact and Assessment.
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>Inspiring storytelling feeds D3 players the knowledge to understand how they fit in their roles presenting opportunities for user education in an immersive game-play. <HashLink className="my-colour underline" to='../pilots#second'>Learn more</HashLink>
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}>Inspiring storytelling feeds D3 players the knowledge to understand how they fit in their roles presenting opportunities for user education in an immersive game-play. <HashLink className="my-colour underline" to='../pilots#second'>Learn more</HashLink>
 
 
 

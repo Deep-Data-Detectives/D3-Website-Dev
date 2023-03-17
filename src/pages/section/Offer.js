@@ -16,7 +16,7 @@ const Offer = () => {
                         </thead>
                         <tbody>
                         <tr className="rows1">
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>“Dollars for Hours”</strong><br/>(Volunteer Program)<br/><HashLink className="my-colour underline" to='../dollars#main'>Register your interest</HashLink><br/><br/> 
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong>“Dollars for Hours”</strong><br/>(Volunteer Program)<br/><HashLink className="my-colour underline" to='../dollars#main'>Register your interest</HashLink><br/><br/> 
                             <ul className="ullist1">
                                 <li>Game Design</li>
                                 <li>Software Development</li>
@@ -25,7 +25,7 @@ const Offer = () => {
                                 <li>Community Building</li>
                                 </ul>
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>D3 For Good Brigade</strong><br/>Join a community of expert technologists, designers, researchers and analysts committed to using our skills to make a positive impact on the world to accelerate Global Goals.<br/><br/>
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong>D3 For Good Brigade</strong><br/>Join a community of expert technologists, designers, researchers and analysts committed to using our skills to make a positive impact on the world to accelerate Global Goals.<br/><br/>
                             <ul className="ullist1">
                                 <li>Artificial Intelligence</li>
                                 <li>Software Development</li>
@@ -33,7 +33,7 @@ const Offer = () => {
                                 </ul>
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}>D3s living in energy communities (vulnerable to climate hazards) know what kinds of businesses work there, and they want a shot at inclusive entrepreneurship.<br/><br/>
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}>D3s living in energy communities (vulnerable to climate hazards) know what kinds of businesses work there, and they want a shot at inclusive entrepreneurship.<br/><br/>
                             <strong>Programs:</strong><br/><br/> 
 
                             <ul className="ullist1" >
@@ -44,7 +44,7 @@ const Offer = () => {
                             </td>
                         </tr>
                         <tr className="rows1">
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>Internships</strong><br/> 
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong>Internships</strong><br/> 
 
                             <HashLink className="my-colour underline" to='../internships#main'>Register your interest</HashLink><br/><br/>
                             <ul className="ullist1">
@@ -57,7 +57,7 @@ const Offer = () => {
 
                                 </ul>
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong><HashLink className="my-colour underline" to='../pilots#second'>Play [D3s] Everywhere! Game</HashLink></strong><br/><br/>
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong><HashLink className="my-colour underline" to='../pilots#second'>Play [D3s] Everywhere! Game</HashLink></strong><br/><br/>
 
                             <ul className="ullist1">
                                 <li>Paid Micro-Jobs</li>
@@ -67,14 +67,14 @@ const Offer = () => {
                                 </ul>
 
                             </td>
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>Partnerships</strong><br/> 
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong>Partnerships</strong><br/> 
 
                             <HashLink className="my-colour underline" to='../partnerships#main'>EXPLORE MORE</HashLink><br/><br/>
 
                             </td>
                         </tr>
                         <tr>
-                            <td style={{padding: "10px", verticalAlign: "top"}}><strong>Fellowships</strong><br/> 
+                            <td style={{padding: "10px", verticalAlign: "top", textAlign: "justify"}}><strong>Fellowships</strong><br/> 
 
                             <Link  id='second' className="my-colour underline" to="/contact">Register your interest</Link><br/><br/>
                             <ul className="ullist1">

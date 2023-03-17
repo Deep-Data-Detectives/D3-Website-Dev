@@ -11,6 +11,8 @@ import Dollars from "./Dollars";
 import Internships from "./Internships";
 import Partnerships from "./Partnerships";
 import Principles from "./Principles";
+import DEI from "./section/DEI";
+import Privacy from "./section/Privacy";
 
 const Pages = () => {
     return (
@@ -25,6 +27,8 @@ const Pages = () => {
                 <Route path="/internships" element={<Internships/>}/>
                 <Route path="/partnerships" element={<Partnerships/>}/>
                 <Route path="/principles" element={<Principles/>}/>
+                <Route path="/diversity" element={<DEI/>}/>
+                <Route path="/privacy" element={<Privacy/>}/>
             </Routes>
             <Footer/>
         </Router>

@@ -20,7 +20,7 @@ const ImageSlider = ({ images }) => {
           justifyContent: 'center',
           width: `${images.length * 300}px`,
           transition: 'transform 1s ease-in-out',
-          transform: `translateX(${-currentImageIndex * 310}px)`,
+          transform: `translateX(${-currentImageIndex * 200}px)`,
           marginLeft: '50px'
         }}
       >

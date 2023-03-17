@@ -15,7 +15,7 @@ const Pilots = () => {
                 <h2 className="font-extrabold md:text-3xl lg:text-4xl">D3 Adventures</h2><br/>
                 <div style={{textAlign: "left"}}>
 
-                <span>
+                <div style={{textAlign: "justify"}}>
                     “D3 Adventures” is the first pilot of a 3-part series that started in October 2022 and aims at empowering underrepresented voices. 
 
                     We conducted a mini-grant class immersion challenge that registered 67 teachers from 23 cities. Three (3) winners from Lexington, KY, Creshaw, Los Angeles, CA and Atlanta, GA each received a $500 grant.  In addition, we surveyed and interviewed all participants to gauge the pilot’s efficacy.
@@ -23,7 +23,7 @@ const Pilots = () => {
                     The results show that our target audience found the D3 datasets valuable in planning their immersions, and the mini-grants were crucial in removing barriers imposed by school districts policies.  Participants reported positive changes in behavior, with a newfound motivation to embed equity in their immersions for all living creatures and take action towards a more sustainable neighborhood.  
 
                     This first pilot was successful in raising inclusive awareness about climate change, promoting pro-environmental behavior, and teaching the use of datasets and visualizations, despite unfavorable weather conditions in some cities.
-                    </span><br></br>
+                    </div><br></br>
                     <table className='tables1'
                            style={{borderCollapse: "collapse", margin: "auto", textAlign: "left"}}>
                         <thead>
@@ -47,7 +47,7 @@ const Pilots = () => {
                     </div>
                     </div>
                     <Link  id='second' className="my-colour underline" to="/contact">REQUEST MORE INFORMATION </Link>
-                    <br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/>
 
 
 
@@ -59,7 +59,7 @@ const Pilots = () => {
                 <h2 className="font-extrabold md:text-3xl lg:text-4xl">Welcome to [D3s] Everywhere! Game</h2><br></br>
                 <h3 className="font-extrabold md:text-1xl lg:text-1xl">Gaming with Purpose: Play, Learn, and Make a Positive Impact!</h3><br></br>
 
-                <div style={{textAlign: "left"}}>
+                <div style={{textAlign: "justify"}}>
 
                 <span>
                                         Our mission is to empower individuals and communities to take action towards sustainability and make communities more resilient. Our mantra is “If you can see it, you can live it!.” <br></br>
@@ -79,15 +79,12 @@ const Pilots = () => {
 
 
                     <div>
-                    <h3 className="font-extrabold md:text-1xl lg:text-1xl">Ready to join our research team. Register your interest.</h3><br></br>
-                                    <div style={{ marginLeft: "280px"}}>
+                    <h3 className="font-extrabold md:text-1xl lg:text-1xl">Ready to join our research team? Register your interest.</h3><br></br>
+                                    <div>
                                     <UserTable/>
                                     </div>
                                         </div>
                                         </div><br id='third'></br><br/><br/><br/><br/>
-
-
-
 
         <div>
 
@@ -118,7 +115,7 @@ const Pilots = () => {
            </div>
            
 
-           <div style={{textAlign: "left"}}>
+           <div style={{textAlign: "justify"}}>
            <p> We are looking for women who are committed to organizing their communities to take collective climate action. Whether you are a student, a professional, or a stay-at-home mom, you have the power to make a difference.</p><br/>
            <p> Simply share your ideas for mobilizing your community to reduce carbon emissions, protect natural resources, and build sustainable practices while promoting sustainable, healthy meals. We want to hear about your plans for organizing events, doing community audits, and engaging local leaders. </p><br/>
            <p> We will award three winners a prize and the opportunity to turn their ideas into action with support from our team. So, if you're ready to make a difference and be a part of the movement to protect our planet, play the game! </p><br/>
