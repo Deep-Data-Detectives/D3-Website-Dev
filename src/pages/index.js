@@ -11,6 +11,7 @@ import Dollars from "./Dollars";
 import Internships from "./Internships";
 import Partnerships from "./Partnerships";
 import Principles from "./Principles";
+import Fellowship from "./Fellowship";
 
 const Pages = () => {
     return (
@@ -25,6 +26,7 @@ const Pages = () => {
                 <Route path="/internships" element={<Internships/>}/>
                 <Route path="/partnerships" element={<Partnerships/>}/>
                 <Route path="/principles" element={<Principles/>}/>
+                <Route path="/fellowship" element={<Fellowship/>}/>
             </Routes>
             <Footer/>
         </Router>
