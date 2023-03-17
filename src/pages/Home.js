@@ -242,7 +242,7 @@ const Home = () => {
                     <Link className="my-colour" to="/contact"><u>Speak to our team</u></Link>
                 </Typography><br/>
                 <Typography className='text-center' variant="h5" gutterBottom>
-                    <Link className="my-colour" to=""><u>MEDIA Page</u></Link>
+                    <Link className="my-colour" to="/media"><u>MEDIA Page</u></Link>
                 </Typography><br/>
                 <Typography className='text-center' variant="h5" gutterBottom>
                     <Link className="my-colour" to=""><u>EVENTS Page</u></Link>

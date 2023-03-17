@@ -14,6 +14,7 @@ import Principles from "./Principles";
 import DEI from "./section/DEI";
 import Privacy from "./section/Privacy";
 import Fellowship from "./Fellowship";
+import Media from "./Media";
 
 const Pages = () => {
     return (
@@ -31,6 +32,7 @@ const Pages = () => {
                 <Route path="/diversity" element={<DEI/>}/>
                 <Route path="/privacy" element={<Privacy/>}/>
                 <Route path="/fellowship" element={<Fellowship/>}/>
+                <Route path="/media" element={<Media/>}/>
             </Routes>
             <Footer/>
         </Router>
