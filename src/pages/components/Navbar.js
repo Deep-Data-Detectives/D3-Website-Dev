@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import React, {useState} from 'react';
 import '../../main.css';
-import logo from "../images/NXTWAVE LOGO_UPDATED 02092023.png"
+import logo from "../images/DEEP DATA DETECTIVES (D3) INITIATIVE LOGO_REVISED 02052023.png"
 
 
 export default function Navbar(props) {
