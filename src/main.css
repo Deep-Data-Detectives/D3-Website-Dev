@@ -1,74 +1,81 @@
+
 body {
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.5;
   text-rendering: optimizespeed;
   scroll-behavior: smooth;
+
 }
 
 .blogContent p {
     margin-bottom: 1rem;
     margin-top: 1rem;
-  
-  }
-  .blogContent h2{
-  
+
+}
+
+.blogContent h2 {
+
     font-size: 30px;
     font-weight: bold;
   }
   
-  .navbarcolour{
-    background-color: #000099;
-  }
+.navbarcolour{
+  background-color: #000099;
+}
 
-  .navbarele {
-    color: white;
-  }
-  .navbarele2 {
-    color: rgb(43, 192, 132);
-  }
+.navbarele {
+  color: white;
+}
+.navbarele2 {
+  color: rgb(43, 192, 132);
+}
 
-  .navbar {
-    /* background-color: #f9f8f9; */
-    transition: background-color 0.3s ease;
-    /* box-shadow: 0 0 10px #A0A0A0; */
-    opacity: 0.95;
-    font-family: "Inter",sans-serif;
+.navbar {
+/* background-color: #f9f8f9; */
 
+transition: background-color 0.3s ease;
+/* box-shadow: 0 0 10px #A0A0A0; */
+opacity: 0.95;
+font-family: "Inter", sans-serif;
 
-  }
+}
+
   
-  .button:hover {
-    background-color: #0c98c763;
-    backdrop-filter: blur(10px);
-  }
-  
-  .my-element {
+.button:hover {
+  background-color: #0c98c763;
+
+  backdrop-filter: blur(10px);
+}
+
+.my-element {
     border-radius: 15px;
     box-shadow: 10px 10px 5px #888;
-  }
-  .my-element2 {
+}
+
+.my-element2 {
     border-radius: 15px;
     box-shadow: 10px 10px 5px #141414;
-  }
-  .new-element {
+}
+
+.new-element {
     border-radius: 10px;
-  }
+}
 
-  .my-colour{
+.my-colour {
     color: #000099;
-  }
+}
 
-  .main-div{
-    font-family: "FreightText Pro", sans-serif
-  }
+.main-div{
+  font-family: "FreightText Pro", sans-serif
+}
 
-  .font-sizes{
+.font-sizes {
     font-size: 30px;
     font-weight: bold;
-  }
+}
 
-  .tables1{
+.tables1 {
     -webkit-font-smoothing: antialiased;
     text-transform: none;
     letter-spacing: 0.1px;
@@ -81,9 +88,9 @@ body {
     width: 100%;
     table-layout: fixed;
 
-  }
+}
 
-  .tables2{
+.tables2 {
     -webkit-font-smoothing: antialiased;
     text-transform: none;
     letter-spacing: 0.1px;
@@ -95,9 +102,9 @@ body {
     margin: 0 auto;
     width: 100%;
     table-layout: fixed;
-  }
+}
 
-  .tables3{
+.tables3 {
     -webkit-font-smoothing: antialiased;
     text-transform: none;
     letter-spacing: 0.1px;
@@ -109,9 +116,9 @@ body {
     width: 100%;
     table-layout: fixed;
     max-width: 1000px;
-  }
+}
 
-  .tables4{
+.tables4 {
     -webkit-font-smoothing: antialiased;
     text-transform: none;
     letter-spacing: 0.1px;
@@ -124,54 +131,56 @@ body {
     width: 90%;
     table-layout: fixed;
     max-width: 1000px;
-  }
+}
 
   .rows1{
     /* border: 1px solid black; */
     padding: 10;
 
-  }
 
+}
   .background1{
     background-color: '#000099';
   }
 
   /* .image_size{
+
     max-width: 250px;
     max-height: 250px;
-  }
+}
 
-  .image_size2{
+.image_size2 {
     max-width: 300px;
     max-height: 300px;
-  }
-  .image_size3{
+}
+
+.image_size3 {
     max-width: 350px;
     max-height: 350px;
   } */
 
-  .ullist1 {
+.ullist1 {
     list-style-type: disc;
     margin-left: 18px;
-  }
+}
 
-  .spinner-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-  }
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-  .user-tablecontainer {
+.user-tablecontainer {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .user-table {
+}
+
+.user-table {
     width: 100%;
     border-collapse: collapse;
     /* border: 2px solid black; */
@@ -179,22 +188,23 @@ body {
   
   .user-table th,
   .user-table td {
+
     padding: 10px;
     text-align: left;
-  }
-  
-  .user-table th {
+}
+
+.user-table th {
     background-color: #eee;
-  }
-  
-  .user-table input {
+}
+
+.user-table input {
     width: 100%;
     padding: 5px;
     border: 1px solid gray;
     border-radius: 5px;
-  }
-  
-  .user-table button {
+}
+
+.user-table button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -203,9 +213,9 @@ body {
     cursor: pointer;
     margin: 0 auto;
     display: block;
-  }
-  
-  .success-message {
+}
+
+.success-message {
     margin: 20px 0;
     padding: 10px;
     border: 2px solid #007bff;
@@ -306,4 +316,3 @@ body {
     padding: 1rem;
     background-color: white;
   }
-  

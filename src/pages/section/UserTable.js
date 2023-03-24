@@ -71,7 +71,7 @@ function UserTable() {
             ))}
             <tr>
               <td colSpan="3">
-                <button type="submit">Submit</button>
+                <button style={{borderRadius:'15px'}} type="submit">Submit</button>
               </td>
             </tr>
           </tbody>

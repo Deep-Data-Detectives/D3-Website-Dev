@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import '../../main.css';
 import logo from '../images/DEEP DATA DETECTIVES (D3) INITIATIVE LOGO_REVISED 02052023.png';
-import zIndex from '@mui/material/styles/zIndex';
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
