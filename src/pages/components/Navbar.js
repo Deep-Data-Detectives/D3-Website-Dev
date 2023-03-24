@@ -1,14 +1,16 @@
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import React, {useState} from 'react';
 import '../../main.css';
 import logo from "../images/DEEP DATA DETECTIVES (D3) INITIATIVE LOGO_REVISED 02052023.png"
-import {Backdrop, Box, makeStyles, Slide, SpeedDial, SpeedDialAction} from "@mui/material";
+import {Backdrop, Box, Slide, SpeedDial, SpeedDialAction} from "@mui/material";
 import {Close, Menu} from "@mui/icons-material";
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 
 
 export default function Navbar(props) {
     const [navbarOpen, setNavbarOpen] = useState([]);
     const selectd = props.selected;
+    const navigate = useNavigate();
     const [open, setOpen] = useState(false);
     const menuItems = ["How We Do It.", "Impact Areas.", "What We Offer.", "Media.", "Stay in Touch."];
     return (
@@ -45,8 +47,8 @@ export default function Navbar(props) {
                 icon={open ? <Close/> : <Menu/>}
             >
                 {menuItems.map((menu) => {
-                    return <SpeedDialAction sx={{marginY: "1.5rem"}}
-                                            tooltipOpen tooltipTitle={menu}/>
+                    return <SpeedDialAction icon={<HorizontalRuleIcon/>} sx={{marginY: "1.5rem"}}
+                                            tooltipOpen tooltipTitle={menu} onClick={() => navigate("/contact")}/>
                 })}
                 {/*<SpeedDialAction tooltipOpen tooltipTitle={"How We Do It."}/>*/}
                 {/*<SpeedDialAction tooltipOpen tooltipTitle={"Impact Areas."}/>*/}
