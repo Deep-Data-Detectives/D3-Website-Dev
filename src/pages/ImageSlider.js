@@ -1,37 +1,60 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import '../slider.css';
+import '../main.css'
 
-const ImageSlider = ({ images }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const ImageSlider = ({ leftImage, leftText, rightImage, rightText }) => {
+  const [isLeftVisible, setIsLeftVisible] = React.useState(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex+1) % (images.length));
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setIsLeftVisible((prevVisible) => !prevVisible);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <div style={{bottom: '10px', right: '10px', maxwidth: '700px', height: '190px', overflow: 'hidden', borderRadius: '10px', boxShadow: '0 0 10px rgba(0,0,0,0.3)', zIndex: '1' }}>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          width: `${images.length * 300}px`,
-          transition: 'transform 1s ease-in-out',
-          transform: `translateX(${-currentImageIndex * 200}px)`,
-          marginLeft: '50px'
-        }}
-      >
-        {images.map((image, index) => (
-          <img
-            key={image}
-            src={image}
-            alt="Image"
-            style={{ width: '300px', height: '190px', objectFit: 'cover', filter: (index - currentImageIndex) == 1,marginRight: '50px', transition: 'filter 0.5s ease-out'}}
-          />
-        ))}
+    <div className="slider-container" style={{ zIndex: '-1' }}>
+      <div className="slider-half left-slide">
+        <SwitchTransition>
+          <CSSTransition
+            key={isLeftVisible}
+            addEndListener={(node, done) =>
+              node.addEventListener('transitionend', done, false)
+            }
+            classNames="slide-left"
+          >
+            <div className="slide">
+              {isLeftVisible ? (
+                <img src={leftText} alt="left" className="img" />
+              ) : (
+                <img src={leftImage} alt="left" className="img" />
+
+              )}
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
+      </div>
+      <div className="slider-half right-slide">
+        <SwitchTransition>
+          <CSSTransition
+            key={isLeftVisible}
+            addEndListener={(node, done) =>
+              node.addEventListener('transitionend', done, false)
+            }
+            classNames="slide-right"
+          >
+            <div className="slide">
+              {isLeftVisible ? (
+                                <img src={rightImage} alt="right" className="img" />
+
+              ) : (
+                <img src={rightText} alt="left" className="img" />
+
+              )}
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
       </div>
     </div>
   );

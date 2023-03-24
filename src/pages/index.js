@@ -15,6 +15,7 @@ import DEI from "./section/DEI";
 import Privacy from "./section/Privacy";
 import Fellowship from "./Fellowship";
 import Media from "./Media";
+import Donate from "./Donate";
 
 const Pages = () => {
     return (
@@ -33,6 +34,7 @@ const Pages = () => {
                 <Route path="/privacy" element={<Privacy/>}/>
                 <Route path="/fellowship" element={<Fellowship/>}/>
                 <Route path="/media" element={<Media/>}/>
+                <Route path="/donate" element={<Donate/>}/>
             </Routes>
             <Footer/>
         </Router>

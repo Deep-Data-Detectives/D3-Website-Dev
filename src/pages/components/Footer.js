@@ -8,47 +8,46 @@ export default function Footer() {
 
     return (<>
             <Box
-                component="footer"
+                component="footer" className="new-element"
                 sx={{
-                    py: 4, px: 4, mt: 'auto', backgroundColor: '#000099'
+                    py: 7, px: 5, mt: '10px', backgroundColor: '#000099'
                 }}
             >
                 <Stack direction={"column"} spacing={2}>
-                    <Grid direction={"row"} container>
+                <Grid container direction={"row"}>
+                    <Grid item xs={6} md={6}>
+                        <Box display={"flex"} flexDirection={"row"} alignItems={"left"} justifyContent={"flex-start"} height={"100%"}>
+                            <Box my={1} mx={1} component={Link} to="/">
+                                <img className="new-element" src={d3Logo} width="250" alt="d3Logo"/>
+                            </Box>
+                            <Box my={1} component={"a"} href="https://nxtwavefounders.com/">
+                                <img className="new-element" src={nxtLogo} width="250" alt="nxtLogo"/>
+                            </Box>
+                        </Box>
+                    </Grid>
                         <Grid xs={6} item>
-                            <Box mx={1} display={"inline-block"} component={Link} to="/">
-                                <img src={d3Logo} width="250" alt="d3Logo"/>
-                            </Box>
-                            <Box mx={1} display={"inline-block"} component={"a"} href="https://nxtwavefounders.com/">
-                                <img src={nxtLogo} width="250" alt="nxtLogo"/>
-                            </Box>
-                        </Grid>
-                        <Grid display={"flex"} xs={6} justifyContent={"space-between"} item>
-                            <Box component={"nav"}>
+                            <Box display={"flex"} justifyContent={"flex-end"} alignItems={"right"} height={"100%"} component={"nav"}>
                                 <Stack component={"ul"} direction={"column"}>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline" to='/'>How We Do
-                                            It</HashLink></Typography>
-                                    <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline" to='./contact#main'>
-                                            Meet The Team
-                                        </HashLink></Typography>
-                                    <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline" to='/'>Impact
-                                            Areas</HashLink></Typography>
-                                    <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline" to='./privacy#main'>Privacy</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" to='/'>How We Do It</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline" to='./diversity#main'>
-                                            Diversity & Inclusion
-                                        </HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" to='./contact#main'>Meet The Team</HashLink>
+                                    </Typography>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2" to='/'>Impact Areas</HashLink>
+                                    </Typography>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2" to='./privacy#main'>Privacy</HashLink>
+                                    </Typography>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2" to='./diversity#main'>Diversity & Inclusion</HashLink>
                                     </Typography>
                                 </Stack>
                             </Box>
-                            <Box>Buttons</Box>
                         </Grid>
                     </Grid>
+
                     <Grid direction={"row"} justifyContent={"space-between"} container>
                         <Grid xs={6} item>
                             <div className="flex m-4 space-x-6 sm:justify-start">
@@ -95,13 +94,16 @@ export default function Footer() {
                                     <span className="sr-only">Linkedin page</span>
                                 </a></div>
                         </Grid>
-                        <Grid xs={6} color={"white"} item>
-                            <Typography variant={"body2"}>Copyright ©2023. Deep Data Detectives (D3).</Typography>
-                            <Typography variant={"body2"}>A flagship initiative of NxtWave Founders, Inc.</Typography>
-                            <Typography variant={"body2"}>(NxtWave), a 501(C)(3) Organization that is registered with
+                        <Grid direction={"row"} item color={'white'} xs={5} md={4}>
+                        <Box justifyContent={"flex-end"} alignItems={"right"} height={"100%"}>
+                            <span className="iSpA-dU3">Copyright ©2023. Deep Data Detectives (D3).</span>
+                            <span className="iSpA-dU3">A flagship initiative of NxtWave Founders, Inc.</span>
+                            <span className="iSpA-dU3">(NxtWave), a 501(C)(3) Organization that is registered with
                                 the IRS, EIN #
-                                84-3277794.</Typography>
-                            <Typography variant={"body2"}>All rights reserved.</Typography>
+                                84-3277794. </span>
+                            <span className="iSpA-dU3">All rights reserved.</span>
+                            </Box>
+
                         </Grid>
                     </Grid>
                 </Stack>
