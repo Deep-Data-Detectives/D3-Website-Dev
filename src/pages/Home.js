@@ -137,9 +137,9 @@ const Home = () => {
                 </div>
 
 
-                <div className='navbarcolour '>
+                <div id={"whyD3"} className='navbarcolour '>
                     <div className="text-white py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-                        <p className="mb-8 font-sizes">Why Deep Data Detectives (D3)</p>
+                        <p  className="mb-8 font-sizes">Why Deep Data Detectives (D3)</p>
                         <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
                         <table className='tables1 iSpA-dU2 mx-auto max-w-screen-xl text-center'
                                style={{borderCollapse: "collapse", margin: "auto"}}>

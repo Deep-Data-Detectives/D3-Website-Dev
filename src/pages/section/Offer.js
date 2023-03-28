@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 
 const Offer = () => {
-    return (<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-8">
+    return (<div id={"offer"} className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-8">
         <span className="font-extrabold md:text-3xl lg:text-4xl">What We Offer</span><br/><br/>
         <div className="grid-container ">
             {/* Workforce Development */}
