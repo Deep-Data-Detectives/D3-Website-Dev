@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import img from "../images/img.png"
+import img from "../images/img.jpg"
 import img2 from "../images/Instagram WINNER post - 34.png"
 import img3 from "../images/live.JPG"
 import img4 from "../images/embrace equity for women.JPG"
@@ -9,12 +9,23 @@ import img4 from "../images/embrace equity for women.JPG"
 
 
 const Progress = () => {
-    return (<div id={"progress"} className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-8">
+    return (<div id={"progress"} className="py-8 mx-auto text-center lg:py-16">
         <span className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR PROGRESS</span><br/><br/>
-        <p className="text-lg iSpA-dU4">Maximizing Impact: Connecting Good Intentions with AI and Data-Driven
-            Insights</p><br/>
-        <span>Breaking New Ground Into Research With Three Pilots</span><br></br><br/>
-        <img className="my-element mx-auto" src={img} width="750" height="450"/><br></br><br></br><br></br>
+        <div className="orange-box">
+      <p className="white-text2 text-lg iSpA-dU">
+        Maximizing Impact: <br></br>Connecting Good Intentions with <br></br> AI and Data-Driven Insights
+            </p>
+            </div><br></br>
+        <div className="container5">
+                <img
+                style={{ width: "100%"}}
+                className="my-element"
+                src={img}
+                alt="My Image"
+            />
+            </div><br/><br/><br/><br/><br/><br/>
+            <span className="font-bold md:text-3xl lg:text-4xl">Breaking New Ground Into Research With Three Pilots</span><br></br><br/>
+
         <div className="grid-container ">
             <div className="grid-item iSpA-dU2">
             <strong> <h3>Pilot 1: D3 Adventures</h3></strong><br></br>
@@ -22,7 +33,8 @@ const Progress = () => {
                 <p className="iSpA-dU2" style={{justifyContent:"center"}}>
                 (D3) Adventures is a Prize Winner in the Designing for Digital Thriving
                 Challenge hosted by @ideo @riotgames @FairPlayA @CooneyCenter @hopelab
-                @scefdn.
+                @scefdn.<br></br><br></br>
+                We celebrate small wins and recognize our D3s with rewards and economic opportunities. 
                 </p><br/>
                 <HashLink className="my-colour underline iSpA-dU2" to="../pilots#first">
                 Learn about

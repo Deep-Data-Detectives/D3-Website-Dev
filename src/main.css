@@ -421,6 +421,24 @@ font-family: "Inter", sans-serif;
       grid-template-columns: 1fr;
     }
   }
+
+  .orange-box {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .white-text2 {
+    color: white;
+  }
+  
+  .text-lg2 {
+    font-size: large;
+  }
+  
   
   
   

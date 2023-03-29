@@ -146,10 +146,10 @@ const Home = () => {
 
 
                     <div id={"whyD3"} className='navbarcolour text-white'>
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                    <div className="py-8 mx-auto max-w-screen-xl text-center lg:py-16">
                         <p className="mb-8 font-sizes">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p>
                         <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
-                        <div className="grid-container3">
+                        <div className="grid-container">
                             <div className="grid-item3 iSpA-dU2">
                                 <h3>IMPACT</h3>
                                 Grounded on research that translates into the field to break through barriers and reduce inequality.
