@@ -26,7 +26,7 @@ const Home = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 300);
+        }, 500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -40,10 +40,10 @@ const Home = () => {
 
                 <section>
                     <ImageSlider
-                        leftImage={collage}
-                        leftText={wildfire}
-                        rightImage={floating}
-                        rightText={d3comp}
+                        leftImage={wildfire}
+                        leftText={collage}
+                        rightImage={d3comp}
+                        rightText={floating}
                     />
                     <img src={playGame} alt={"game"}/>
                     <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -51,7 +51,7 @@ const Home = () => {
                         {/*    Climate Action and Economic*/}
                         {/*    Prosperity for All with Data and AI</h1><br/>*/}
 
-                        <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+                        <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-46">
                             {/*<span class="text-black-400"><strong>PLAY.</strong> Turn Climate Action into a Fun and Rewarding Game While Building a Sustainable Community</span><br/><br/>*/}
                             {/*<span class="text-sm my-colour text-black-400">Every 10 points = We raise $10 for a D3 Community to teach skills and create jobs where needed the most</span><br/><br/>*/}
                             {/*<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>*/}
@@ -70,16 +70,16 @@ const Home = () => {
                             {/*    />*/}
                             {/*</div>*/}
 
-                            <br/>
                             <div
                                 className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                                <Link to=""
-                                      className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                            <HashLink className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800" to="../pilots#second">              
+                                
                                     &nbsp;PLAY THE GAME
-                                </Link>
-                            </div>
+                                    </HashLink>
+                                </div>
                             <div>
-            <span className='iSpA-dU2'>MEET DEEP DATA DETECTIVES (D3). 
+            <span> <br></br>
+            <div className="my-colour font-extrabold md:text-3xl lg:text-5xl">MEET<br></br> <u>D</u>EEP <u>D</u>ATA <u>D</u>ETECTIVES (D3).</div><br/><br></br>
 
                 We are on a mission to empower people to unleashing the power of Data and AI to accelerate Global Goals 
                 <br></br><br></br>
@@ -96,7 +96,7 @@ const Home = () => {
             </span>
                             </div>
                             <br/><br/><br/><br/>
-                            <p className="mb-8 font-sizes">Connecting One [D3] At A Time</p>
+                            <p className="my-colour font-extrabold md:text-3xl lg:text-4xl">Connecting One [D3] At A Time</p><br></br>
                         </div>
                         <table className='tables1 iSpA-dU2 mx-auto max-w-screen-xl text-center'
                                style={{borderCollapse: "collapse", margin: "auto"}}>
@@ -145,65 +145,41 @@ const Home = () => {
                     </div>
 
 
-                    <div id={"whyD3"} className='navbarcolour '>
-                        <div className="text-white py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-                            <p className="mb-8 font-sizes">Why Deep Data Detectives (D3)</p>
-                            <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
-                            <table className='tables1 iSpA-dU2 mx-auto max-w-screen-xl text-center'
-                                   style={{borderCollapse: "collapse", margin: "auto"}}>
-                                <thead>
-                                <tr>
-                                    <th style={{
-                                        padding: "10px", verticalAlign: "top", textAlign: ""
-                                    }}>IMPACT
-                                    </th>
-                                    <th style={{
-                                        padding: "10px", verticalAlign: "top", textAlign: ""
-                                    }}>SCALABILITY & SUSTAINABILITY
-                                    </th>
-                                    <th style={{
-                                        padding: "10px", verticalAlign: "top", textAlign: ""
-                                    }}>FEASIBILITY
-                                    </th>
-                                    <th style={{padding: "10px", verticalAlign: "top", textAlign: ""}}>DATA &
-                                        RESPONSIBILITY
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td style={{padding: "10px", verticalAlign: "top"}}>Grounded
-                                        on research that translates
-                                        into the field to break through barriers and reduce inequality.
-
-
-                                    </td>
-                                    <td style={{padding: "10px", verticalAlign: "top"}}>The
-                                        Initiative will go beyond our
-                                        pilots to share our learnings and best practices with a global community.
-
-
-                                    </td>
-                                    <td style={{padding: "10px", verticalAlign: "top"}}>Executing
-                                        in alignment with an
-                                        ecosystem of technical and strategic partners.
-
-
-                                    </td>
-                                    <td style={{padding: "10px", verticalAlign: "top"}}>As AI
-                                        shows great promise, Deep Data
-                                        Detectives <Link className="underline text-blue-500 hover:text-black font-bold"
-                                                         to="/principles">principles</Link> align with human good
-                                        intentions and values.
-
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                    <div id={"whyD3"} className='navbarcolour text-white'>
+                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                        <p className="mb-8 font-sizes">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p>
+                        <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
+                        <div className="grid-container3">
+                            <div className="grid-item3 iSpA-dU5">
+                                <h3>IMPACT</h3>
+                                Grounded on research that translates into the field to break through barriers and reduce inequality.
+                            </div>
+                            <div className="grid-item3 iSpA-dU5">
+                                <h3>SCALABILITY & SUSTAINABILITY</h3>
+                                The Initiative will go beyond our pilots to share our learnings and best practices with a global community.
+                            </div>
+                            <div className="grid-item3 iSpA-dU5">
+                                <h3>FEASIBILITY</h3>
+                                Executing in alignment with an ecosystem of technical and strategic partners.
+                            </div>
+                            <div className="grid-item3 iSpA-dU5">
+                                <h3>DATA & RESPONSIBILITY</h3>
+                                As AI shows great promise, Deep Data Detectives <Link className="underline text-blue-500 hover:text-black font-bold" to="/principles">principles</Link> align with human good intentions and values.
+                            </div>
                         </div>
                     </div>
+                </div>
+                <br></br><br></br><br></br>
+                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+
+                        <p className="my-colour font-extrabold md:text-3xl lg:text-4xl">Become a [D3]</p><br></br>
+                        <span className=''>Join a global community of eco-warriors accelerating economic opportunity for all.</span>
+                        <h3 className="font-extrabold md:text-1xl lg:text-1xl"><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join The Waitlist </a> </h3>
+
+
                     <br/><br/>
+                    </div>
+
                     <Progress/><br></br><br></br><br></br><br></br>
 
                     <div className="text-center">
@@ -224,6 +200,8 @@ const Home = () => {
 
 
                     </div>
+
+                    
                     <br/><br/><br/><br></br>
 
                     <Offer/>

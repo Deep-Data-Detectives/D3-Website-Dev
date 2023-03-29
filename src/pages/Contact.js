@@ -33,18 +33,18 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-wrap w-full justify-center">
-        <div className="w-full md:w-1/2 p-10" style={{maxWidth:'750px'}}>
+        <div className=" md:w-1/2 p-10" style={{maxWidth:'850px'}}>
           <iframe
             className="my-element2 w-full h-full"
             src="https://drive.google.com/file/d/1Y9TF0immtBzNQFfpGWVYatbnhpPnOuS9/preview"
-            style={{ border: 'none', minHeight: '50vh' }}
+            style={{ border: 'none', minHeight: '60vh' }}
             title="Your Title"
             allowFullScreen
           />
         </div>  
         <div className="w-full md:w-1/2 p-10" style={{maxWidth:'550px'}}>
-          <div className="bg-white my-element2 shadow-md rounded-md p-8 w-full border-2 border-black">
-            <div className="" style={{ border: 'none', maxHeight: '80vh' }}>
+          <div className="bg-white my-element2 shadow-md rounded-md p-8 w-full h-full border-2 border-black">
+            <div className="" style={{ border: 'none', maxHeight: '' }}>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
           <h1 style={{textAlign:'center'}} className="text-2xl font-bold mb-6">Contact Us</h1>

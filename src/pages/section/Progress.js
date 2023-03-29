@@ -10,7 +10,7 @@ import img4 from "../images/embrace equity for women.JPG"
 
 const Progress = () => {
     return (<div id={"progress"} className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-8">
-        <span className="mb-8 font-sizes">OUR PROGRESS</span><br/><br/>
+        <span className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR PROGRESS</span><br/><br/>
         <p className="text-lg iSpA-dU4">Maximizing Impact: Connecting Good Intentions with AI and Data-Driven
             Insights</p><br/>
         <span>Breaking New Ground Into Research With Three Pilots</span><br></br><br/>

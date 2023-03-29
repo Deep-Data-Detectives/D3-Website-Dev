@@ -9,7 +9,7 @@ const ImageSlider = ({ leftImage, leftText, rightImage, rightText }) => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setIsLeftVisible((prevVisible) => !prevVisible);
-    }, 3000);
+    }, 4500);
     return () => clearInterval(timer);
   }, []);
 
@@ -24,7 +24,7 @@ const ImageSlider = ({ leftImage, leftText, rightImage, rightText }) => {
             }
             classNames="slide-left"
           >
-            <div className="slide">
+            <div className="slide pr-1">
               {isLeftVisible ? (
                 <img src={leftText} alt="left" className="img" />
               ) : (
@@ -44,7 +44,7 @@ const ImageSlider = ({ leftImage, leftText, rightImage, rightText }) => {
             }
             classNames="slide-right"
           >
-            <div className="slide">
+            <div className="slide pl-1">
               {isLeftVisible ? (
                                 <img src={rightImage} alt="right" className="img" />
 
