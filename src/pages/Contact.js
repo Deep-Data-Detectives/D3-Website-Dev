@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center py-20">
       <ScrollToTop />
       <div className="w-full h-44">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -37,7 +37,7 @@ const Contact = () => {
           <iframe
             className="my-element2 w-full h-full"
             src="https://drive.google.com/file/d/1Y9TF0immtBzNQFfpGWVYatbnhpPnOuS9/preview"
-            style={{ border: 'none', minHeight: '60vh' }}
+            style={{ border: 'none', minHeight: '50vh' }}
             title="Your Title"
             allowFullScreen
           />

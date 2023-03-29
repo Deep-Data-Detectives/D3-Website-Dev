@@ -390,7 +390,37 @@ font-family: "Inter", sans-serif;
     height: 100%;
     border: 0;
   }
+
+  .lightGreyBox {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+  }
   
+  .darkBlueBox {
+    background-color: #1a2b47;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .gridContainer5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+  }
+  .gridContainer6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gridContainer5 {
+      grid-template-columns: 1fr;
+    }
+  }
   
   
   

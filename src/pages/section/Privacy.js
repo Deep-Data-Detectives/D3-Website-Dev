@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const Privacy = () => {
-    return (<div id = 'main' className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-8">
+    return (<div id = 'main' className="py-20 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-8">
 
 <div style={{textAlign: "justify"}}>
 <p><strong>PRIVACY POLICY</strong></p>

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 function Principles() {
-    return (<div className="max-w-screen-xl mx-auto my-10 px-6">
+    return (<div className="py-20 max-w-screen-xl mx-auto my-10 px-6">
         <h2 className="text-3xl font-bold mb-6">Deep Data Detectives (D3) Position on Data Principles and
             Responsible Principles</h2>
         <p className="text-lg mb-6">Controversies in the rise of AI have a transformative impact in people’s lives

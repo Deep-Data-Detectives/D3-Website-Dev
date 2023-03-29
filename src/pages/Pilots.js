@@ -11,7 +11,7 @@ const Pilots = () => {
     return (<div className='main-div'>
 
         <section>
-            <div id='first' className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <div id='first' className="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 
                 <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">D3s PILOT PROJECTS</h1><br/><br/><br/>
                 <div>

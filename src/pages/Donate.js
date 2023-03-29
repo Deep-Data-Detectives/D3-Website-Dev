@@ -5,10 +5,12 @@ import picture1 from "./images/Picture1.png";
 import picture2 from "./images/Picture2.png";
 import picture3 from "./images/Picture3.png";
 import picture4 from "./images/Picture4.png";
+import donation from "./images/donation.png";
+import openc from "./images/openc.png";
 
 const Donate = () => {
   return (
-    <div id = 'main' className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+    <div id = 'main' className="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
     <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Donate</h1><br/>
       <p>
         We are thrilled to share a unique opportunity to support our mission to
@@ -24,13 +26,54 @@ const Donate = () => {
         </div><br></br>
         <div><p></p></div>
         <p>The world is facing numerous complex challenges, from the global pandemic to climate crisis, we believe that AI (if used ethically) has the power to play a significant role in addressing these challenges and making a positive impact in society.</p><br></br>
-        <p>By partnering with us, you will have the opportunity to be at the forefront of innovation and drive progress in industries that have the potential to shape our future, especially the future of untapped individuals and communities.</p>
-        <p>Your support will help us develop cutting-edge workforce and entrepreneurship training tools while generating economic opportunities to sustain the effects of climate change hazards. Furthermore, with your support, we can drive progress in Data Analytics and Generative Ai to advance research and development in vulnerable communities.   We can work together to create solutions that mitigate the climate change crisis and preserve our cities for future generations.</p><br></br>
+          <div className="flex gridContainer5 mx-auto">
+
+                <div className="darkBlueBox iSpA-dU2">
+                  <p>
+                    Your support will help us develop cutting-edge workforce and
+                    entrepreneurship training tools while generating economic
+                    opportunities to sustain the effects of climate change hazards.
+                    Furthermore, with your support, we can drive progress in Data
+                    Analytics and Generative Ai to advance research and development in
+                    vulnerable communities. We can work together to create solutions
+                    that mitigate the climate change crisis and preserve our cities for
+                    future generations.
+                  </p>
+                </div>
+                <div className="lightGreyBox iSpA-dU2">
+                  <p>
+                    By partnering with us, you will have the opportunity to be at the
+                    forefront of innovation and drive progress in industries that have
+                    the potential to shape our future, especially the future of untapped
+                    individuals and communities.
+                  </p>
+                </div>
+          </div><br></br>
         <p>Our backers, donors and sponsors are mission-aligned and are committed to making a positive impact in the world. We would love to hear from you and continue the conversation. Together, we can make a real difference and help to accelerate global goals.  Let's work together to build a brighter tomorrow for all, everywhere!</p>
         <br/><br></br>
         <div className="">
-                            <strong>BECOME A DONOR</strong><br></br>
-                            <p className='iSpA-dU5'>
+                            <a  href="https://www.paypal.com/donate?hosted_button_id=K4KPD2FK2HSMS">
+                            <strong className='underline text-blue-700 hover:text-black font-bold font-bold md:text-3xl lg:text-3xl'>BECOME A DONOR</strong>
+                            </a><br></br><br></br>
+
+
+                            <div className="flex flex-row justify-center">
+
+                                <div className="grid-item2 iSpA-dU2 w-full h-full">
+                                  <p>
+                                    <img src={donation}
+                                    style={{maxHeight:'500px'}}
+                                    ></img>
+                                  </p>
+                                </div>
+                                <div className="grid-item2 iSpA-dU2 w-full h-full justify-center">
+                                  <p>
+                                  Our backers, donors and sponsors are mission-aligned and are committed to making a positive impact in the world. We would love to hear from you and continue the conversation. Together, we can make a real difference and help to accelerate global goals.
+                                  </p>
+                                </div>
+                                </div><br></br><br></br>
+
+                            {/* <p className='iSpA-dU5'>
                             <a  href="https://www.paypal.com/donate?hosted_button_id=K4KPD2FK2HSMS">
                             <button
                                     onMouseEnter={(e) => e.target.style.boxShadow = "0px 0px 25px rgba(255, 255, 0, 0.9)"}
@@ -59,15 +102,26 @@ const Donate = () => {
                                     -.096.035z" fill="#253b80"/><path d="m23.048 7.667c-.028.179-.06.362-.096.55-1.237 6.351-5.469 8.545-10.874 8.545h-2.752c-.661 0-1.218.48-1.321 1.132l-1.409 8.936-.399 2.533a.704.704 0 0 0 .695.814h4.881c.578 0 1.069-.42 1.16-.99l.048-.248.919-5.832.059-.32c.09-.572.582-.992 1.16-.992h.73c4.729 0 8.431-1.92 9.513-7.476.452-2.321.218-4.259-.978-5.622a4.667 4.667 0 0 0 -1.336-1.03z" fill="#179bd7"/><path d="m21.754 7.151a9.757 9.757 0 0 0 -1.203-.267 15.284 15.284 0 0 0 -2.426-.177h-7.352a1.172 1.172 0 0 0 -1.159.992l-1.564 9.906-.045.289a1.336 1.336 0 0 1 1.321-1.132h2.752c5.405 0 9.637-2.195 10.874-8.545.037-.188.068-.371.096-.55a6.594 6.594 0 0 0 -1.017-.429 9.045 9.045 0 0 0 -.277-.087z" 
                                     fill="#222d65"/><path d="m9.614 7.699a1.169 1.169 0 0 1 1.159-.991h7.352c.871 0 1.684.057 2.426.177a9.757 9.757 0 0 1 1.481.353c.365.121.704.264 1.017.429.368-2.347-.003-3.945-1.272-5.392-1.399-1.593-3.924-2.275-7.155-2.275h-9.38c-.66 0-1.223.48-1.325 1.133l-3.907 24.765a.806.806 0 0 0 .795.932h5.791l1.454-9.225z" fill="#253b80"/></svg>
                                 </button>
-                                </a></p><br></br>
+                                </a></p><br></br> */}
 
+                        
 
-                            <strong>BECOME A BACKER OR SPONSOR</strong>
-                            <p className=' underline text-blue-700 hover:text-black font-bold'>
-                            <a href="https://opencollective.com/deepdatadetectives" >
-                            Open Collective
+                          <strong className='my-colour font-bold md:text-3xl lg:text-3xl'>BECOME A SPONSOR</strong>
+                          <div className="flex items-center gridContainer2 space-y-5 mx-auto">
+                            <div className="pl-20 iSpA-dU2">
+                            <a  href="https://opencollective.com/deepdatadetectives">
+                                <p>
+                                    <img src={openc} style={{ maxHeight: '250px' }}></img>
+                                </p>
                                 </a>
-                            </p>
+                            </div>
+                            <div className="iSpA-dU2 items-center pr-20 ">
+                                <p>
+                                    Let's work together to build a brighter tomorrow for all, everywhere!
+                                </p>
+                            </div>
+                        </div>
+                        <br></br>
                         </div>
     </div>
 

@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 function Story() {
     return (<Container maxWidth="xl">
         <div className="mx-auto max-w-screen-xl text-center my-colour iSpA-dU2"><br/><br/>
-        <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">OUR STORY</h1><br/>
+        <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-6xl lg:text-6xl dark:text-white">OUR STORY</h1><br/>
 
         </div>
         <br/>

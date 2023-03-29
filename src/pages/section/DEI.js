@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const DEI = () => {
-    return (<div id = 'main' style={{textAlign: "justify"}} className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-8">
+    return (<div id = 'main' style={{textAlign: "justify"}} className="py-20 px-4 mx-auto max-w-screen-xl lg:py-20 lg:px-8">
 <p><strong>DIVERSITY, INCLUSION AND EQUALITY POLICY</strong></p>
 <p>&nbsp;</p>
 <p>At Deep Data Detectives (D3), a diverse, inclusive, and equitable initiative is one where all volunteers, staff, board of directors, partners and vendors, whatever their gender, race, ethnicity, national origin, age, sexual orientation or identity, education or disability, feel valued and respected. We are committed to a nondiscriminatory approach and provide equal opportunity for employment and advancement in all of our departments, programs, and worksites. We respect and value diverse life experiences and heritages and ensure that all voices are valued and heard.</p>

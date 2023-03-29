@@ -44,7 +44,7 @@ const Home = () => {
                         leftText={collage}
                         rightImage={d3comp}
                         rightText={floating}
-                    />
+                    /><br></br>
                     <img src={playGame} alt={"game"}/>
                     <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                         {/*<h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Driving*/}
@@ -150,19 +150,19 @@ const Home = () => {
                         <p className="mb-8 font-sizes">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p>
                         <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
                         <div className="grid-container3">
-                            <div className="grid-item3 iSpA-dU5">
+                            <div className="grid-item3 iSpA-dU2">
                                 <h3>IMPACT</h3>
                                 Grounded on research that translates into the field to break through barriers and reduce inequality.
                             </div>
-                            <div className="grid-item3 iSpA-dU5">
+                            <div className="grid-item3 iSpA-dU2">
                                 <h3>SCALABILITY & SUSTAINABILITY</h3>
                                 The Initiative will go beyond our pilots to share our learnings and best practices with a global community.
                             </div>
-                            <div className="grid-item3 iSpA-dU5">
+                            <div className="grid-item3 iSpA-dU2">
                                 <h3>FEASIBILITY</h3>
                                 Executing in alignment with an ecosystem of technical and strategic partners.
                             </div>
-                            <div className="grid-item3 iSpA-dU5">
+                            <div className="grid-item3 iSpA-dU2">
                                 <h3>DATA & RESPONSIBILITY</h3>
                                 As AI shows great promise, Deep Data Detectives <Link className="underline text-blue-500 hover:text-black font-bold" to="/principles">principles</Link> align with human good intentions and values.
                             </div>

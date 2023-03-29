@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Container, Link, Stack, Typography} from "@mui/material";
 
 const Media = () => {
-    return (<Container maxWidth={"xl"}>
+    return (<Container className='py-20' maxWidth={"xl"}>
         <Stack my={4} direction={"column"} spacing={5} alignItems={"center"}>
             <Typography variant="h3" component="h2">
                 Press Releases

@@ -18,10 +18,10 @@ export default function Footer() {
                     <Grid item xs={6} md={6}>
                         <Box display={"flex"} flexDirection={"row"} alignItems={"left"} justifyContent={"flex-start"} height={"100%"}>
                             <Box my={1} mx={1} component={Link} to="/">
-                                <img className="new-element" src={d3Logo} width="250" alt="d3Logo"/>
+                                <img className="new-element" src={d3Logo} width="200" alt="d3Logo"/>
                             </Box>
                             <Box my={1} component={"a"} href="https://nxtwavefounders.com/">
-                                <img className="new-element" src={nxtLogo} width="250" alt="nxtLogo"/>
+                                <img className="new-element" src={nxtLogo} width="200" alt="nxtLogo"/>
                             </Box>
                         </Box>
                     </Grid>
