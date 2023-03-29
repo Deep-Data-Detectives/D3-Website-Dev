@@ -14,9 +14,10 @@ import picture3 from "./images/Picture3.png";
 import picture4 from "./images/Picture4.png";
 import playGame from "./images/High Res Images/PLAY T HE GAME.jpg";
 import {HashLink} from 'react-router-hash-link';
+import meetTeam from "./images/High Res Images/Placeholder for Meet The Team.png";
 
 
-import {Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 
 // const images = [collage, d3comp];
 
@@ -207,17 +208,18 @@ const Home = () => {
                         MEET THE TEAM
                         </div>
                     </Typography>
-                    <div className="text-center grid-container-center md:text-3xl">
-                        <div className="grid-item grid-item-center">
-                            <strong>C Luisa Bracamonte</strong>
-                            <p className='iSpA-dU5'>Founder & Principal Investigator</p>
-                            <p className='iSpA-dU5'>
-                                We will display the headshots and links to Linkedin Profiles for
-                                successful cohort graduates only
-                            </p>
-                        </div>
-                    </div>
-                    <br></br>
+                    <Box component={"img"} src={meetTeam} alt="team" className="mx-auto"/>
+                    {/*<div className="text-center grid-container-center md:text-3xl">*/}
+                    {/*    <div className="grid-item grid-item-center">*/}
+                    {/*        <strong>C Luisa Bracamonte</strong>*/}
+                    {/*        <p className='iSpA-dU5'>Founder & Principal Investigator</p>*/}
+                    {/*        <p className='iSpA-dU5'>*/}
+                    {/*            We will display the headshots and links to Linkedin Profiles for*/}
+                    {/*            successful cohort graduates only*/}
+                    {/*        </p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    {/*<br></br>*/}
                     <Typography className="text-center"
                                 gutterBottom>
                                     <div className='md:text-3xl lg:text-2xl'>

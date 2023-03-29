@@ -6,20 +6,39 @@ import fellowship from "../images/High Res Images/Fellowship Program.jpg";
 import d3good from "../images/High Res Images/D3 For Good Brigades.png";
 import d3reward from "../images/High Res Images/D3 Game Rewards and Cash.jpg";
 import entrepreneurship from "../images/High Res Images/Entrepreneurship .png";
+import {HashLink} from "react-router-hash-link";
 
 const Offer = () => {
     return (<Stack py={5} id={"offer"} direction={"column"} alignItems={"center"} spacing={4}>
         <span className="font-extrabold md:text-3xl lg:text-4xl my-colour">What We Offer</span>
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Workforce Development</Typography>
         <Grid px={2} direction={"row"} container>
-            <Grid p={1} xs={4} item>
-                <Box component={"img"} src={dfh} alt={"dfh"}/></Grid>
-            <Grid p={1} xs={4} item>
-                <Box component={"img"} src={internships} alt={"internships"}/></Grid>
-            <Grid p={1} xs={4} item>
-                <Box component={"img"} src={fellowship} alt={"fellowship"}/></Grid>
+            <Grid display={"flex"} flexDirection={"column"} p={1} xs={4} item>
+                <Box component={"img"} src={dfh} alt={"dfh"}/>
+                <Link
+                    alignSelf={"center"}
+                    component={HashLink}
+                    to={"/dollars#top"}>
+                    Register your interest</Link>
+            </Grid>
+            <Grid display={"flex"} flexDirection={"column"} p={1} xs={4} item>
+                <Box component={"img"} src={internships} alt={"internships"}/>
+                <Link
+                    alignSelf={"center"}
+                    component={HashLink}
+                    to={"/internships#top"}>
+                    Register your interest</Link>
+            </Grid>
+            <Grid display={"flex"} flexDirection={"column"} p={1} xs={4} item>
+                <Box component={"img"} src={fellowship} alt={"fellowship"}/>
+                <Link
+                    alignSelf={"center"}
+                    component={HashLink}
+                    to={"/fellowship#top"}>
+                    Register your interest</Link>
+            </Grid>
         </Grid>
-        <Typography bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Job Creation</Typography>
+        <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Job Creation</Typography>
         <Grid px={2} direction={"row"} container>
             <Grid p={1} xs={6} item>
                 <Box component={"img"} src={d3good} alt={"d3good"}/></Grid>
@@ -29,7 +48,7 @@ const Offer = () => {
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Entrepreneurship</Typography>
         <Box px={3} minWidth={"100%"} component={"img"} src={entrepreneurship} alt={"entrepreneurship"}/>
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Partnerships</Typography>
-        <Link className="text-center underline text-blue-700 hover:text-black font-bold" href="/partnerships">
+        <Link variant={"h5"} component={HashLink} to="/partnerships#top">
             EXPLORE MORE
         </Link>
     </Stack>);
