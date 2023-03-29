@@ -27,7 +27,7 @@ export default function Navbar(props) {
 
     return (<>
     
-        <body id={"top"} className=" antialiased absolute text-slate-500 dark:text-slate-400 dark:bg-slate-900 mt-0">
+        <body id={"top"} className=" antialiased absolute text-slate-500 dark:text-slate-400 dark:bg-slate-900 mt-0" >
         <nav className="navbar">
             
             <div className="container flex justify-between items-center mx-auto max-w-8xl">
@@ -38,7 +38,7 @@ export default function Navbar(props) {
                     </div>
                 </Link>
                 <div
-                    className={" top-2 fixed right-2 p-1 transition-all ease-in-out duration-300"}>
+                    className={" top-2 fixed right-5 p-0 transition-all ease-in-out duration-300"}>
 
                     <div>
                     <a href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'>
@@ -82,21 +82,8 @@ export default function Navbar(props) {
                     aria-expanded="false"
                     style={{position: "fixed", top: "10px", right: "10px"}}
                     onClick={() => setNavbarOpen(!navbarOpen)}
-                >
+                >MENU
                     <span className="sr-only">Open main menu</span>
-                    <svg
-                        className="w-6 h-6"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            fillRule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clipRule="evenodd"
-                        ></path>
-                    </svg>
                 </button>
                 </div>
                 <div
@@ -139,7 +126,7 @@ export default function Navbar(props) {
                     }}
                 >
                     <div style={{width: "75%"}}>
-                        <ul className="flex-col p-5 ml-0 mr-5 bg-slate-0 iSpA-dU">
+                        <ul className="flex-col  p-5 ml-0 mr-5 bg-slate-0 iSpA-dU">
                             <li>
                                 <HashLink to="/#whyD3"
                                       onClick={() => setNavbarOpen(false)}

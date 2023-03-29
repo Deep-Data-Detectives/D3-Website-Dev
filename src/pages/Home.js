@@ -187,16 +187,13 @@ const Home = () => {
                         <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2>
                         <br></br>
 
-                        <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+                        <div className="container5">
+                            <div className="aspect-ratio-wrapper"></div>
                             <iframe
-                                className="my-element"
+                                className="my-element5"
                                 src="https://drive.google.com/file/d/1YA50tYCoB-EZQk_wAcjDTmm3fUEGucff/preview"
-                                style={{
-                                    position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0
-                                }}
                             />
-                        </div>
-                        <br/>
+                            </div>
 
 
                     </div>
