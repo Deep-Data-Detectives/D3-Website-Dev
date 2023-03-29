@@ -183,7 +183,7 @@ const Home = () => {
                     <Progress/><br></br><br></br><br></br><br></br>
 
                     <div className="text-center">
-                        <h2 className="font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
+                        <h2 className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
                         <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2>
                         <br></br>
 
@@ -205,10 +205,12 @@ const Home = () => {
                     <br/><br/><br/><br></br>
 
                     <Offer/>
-                    <Typography className="text-center" variant="h5" gutterBottom>
-                        <strong>MEET THE TEAM</strong>
+                    <Typography className="text-center" gutterBottom>
+                        <div className='my-colour font-extrabold md:text-3xl lg:text-3xl'>
+                        MEET THE TEAM
+                        </div>
                     </Typography>
-                    <div className="text-center grid-container-center">
+                    <div className="text-center grid-container-center md:text-3xl">
                         <div className="grid-item grid-item-center">
                             <strong>C Luisa Bracamonte</strong>
                             <p className='iSpA-dU5'>Founder & Principal Investigator</p>
@@ -219,32 +221,40 @@ const Home = () => {
                         </div>
                     </div>
                     <br></br>
-                    <Typography className="text-center underline text-blue-700 hover:text-black font-bold" variant="h5"
+                    <Typography className="text-center"
                                 gutterBottom>
-                        <Link className="" to="/story">
+                                    <div className='md:text-3xl lg:text-2xl'>
+                                    Check
+                                    <Link className=" ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/story">
                             Our Story
                         </Link>
+                                    </div>
+
                     </Typography><br></br>
-                    <Typography className="text-center underline text-blue-700 hover:text-black font-bold" variant="h5"
+                    <Typography className="text-center "
                                 gutterBottom>
-                        <Link className="" to="/contact">
+                        <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/contact">
                             Speak to our team
                         </Link>
                     </Typography><br></br>
-                    <Typography className="text-center underline text-blue-700 hover:text-black font-bold" variant="h5"
+                    <Typography className="text-center"
                                 gutterBottom>
-                        <Link className="" to="/media">
+                        <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/media">
                             MEDIA Page
                         </Link>
                     </Typography><br></br>
-                    <Typography className="text-center underline text-blue-700 hover:text-black font-bold" variant="h5"
+                    <Typography className="text-center"
                                 gutterBottom>
-                        <Link className="" to="">
+                        <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="">
                             EVENTS Page
                         </Link>
-                    </Typography><br></br>
-                    <Typography className="text-center" variant="h5" gutterBottom>
-                        Ready To Join Forces With US ?
+                        
+                    </Typography>
+                    <br></br><br></br>
+                    <Typography className="text-center" gutterBottom>
+                        <div className="my-colour font-extrabold md:text-3xl lg:text-3xl">
+                    Ready To Join Forces
+                    </div>
                     </Typography><br></br>
                     <Typography className="text-center" variant="h6" gutterBottom>
                         Help us continue our work.{" "}
@@ -266,11 +276,12 @@ const Home = () => {
                                 onMouseEnter={(e) => e.target.style.boxShadow = "0px 0px 25px rgba(255, 255, 0, 0.9)"}
                                 onMouseLeave={(e) => e.target.style.boxShadow = "0px 0px 5px rgba(255, 255, 0, 0.7)"}
                             >
-                                Donate
+                                Donate Today
                             </button>
                         </HashLink>
                         <div></div>
                         <br></br>
+                        
                         <div style={{display: "flex", justifyContent: "center"}}>
                             <img
                                 src="https://drive.google.com/uc?export=view&id=1_kOT-tlnNT6wDzmXPPV-G4Yw5i_fzkW9"
@@ -278,16 +289,11 @@ const Home = () => {
                                 width="200"
                                 height="200"
                             />
-                        </div>
+                        </div><br></br>
+                        <h3 className="font-extrabold md:text-2xl lg:text-2xl"><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join The Waitlist </a> </h3>
+
                     </Typography><br></br>
-                    <Typography className="text-center" variant="h5" gutterBottom>
-                        <Link
-                            to=""
-                            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-                        >
-                            &nbsp;PLAY THE GAME
-                        </Link>
-                    </Typography><br></br>
+                    
 
                 </section>)}
         </div>);
