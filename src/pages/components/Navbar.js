@@ -41,7 +41,7 @@ export default function Navbar(props) {
                     className={" top-2 fixed right-5 p-0 transition-all ease-in-out duration-300"}>
 
                     <div>
-                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'>
+                    <a target={'_blank'} href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'>
 
                     <button
                         className="button custom-tooltip inline-flex items-center  ml-3 mr-12 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
