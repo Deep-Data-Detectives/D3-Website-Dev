@@ -62,6 +62,7 @@ const Donate = () => {
                                 <div className="grid-item2 iSpA-dU2 w-full h-full">
                                   <p>
                                     <img src={donation}
+                                    className='my-element'
                                     style={{maxHeight:'500px'}}
                                     ></img>
                                   </p>
