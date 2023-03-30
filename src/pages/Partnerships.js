@@ -80,7 +80,7 @@ const Partnerships = () => {
                 difference for yourself!
             </Typography><br/>
             <Typography variant="h6" gutterBottom>
-                <strong><a className="my-colour underline" href="https://opencollective.com/deepdatadetectives">Partner
+                <strong><a className="my-colour underline" target={'_blank'} href="https://opencollective.com/deepdatadetectives">Partner
                     with Us</a></strong>
             </Typography><br/>
             <Typography variant="h6" gutterBottom>

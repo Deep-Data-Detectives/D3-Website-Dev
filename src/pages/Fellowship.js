@@ -58,7 +58,7 @@ const Fellowship = () => {
 
 
                                 BECOME A FELLOW<br/>
-                                <Link
+                                <Link target={'_blank'}
                                     href={"https://docs.google.com/forms/d/e/1FAIpQLScEGZnbJRCLFVRF6BA1QwRWM7Sqd8g3rBMRcOiQK6L6M5V7lg/viewform?usp=sf_link"}>APPLY</Link>
                             </TableCell>
                         </TableRow>

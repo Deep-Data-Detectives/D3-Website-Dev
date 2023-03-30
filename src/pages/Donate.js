@@ -52,7 +52,7 @@ const Donate = () => {
         <p>Our backers, donors and sponsors are mission-aligned and are committed to making a positive impact in the world. We would love to hear from you and continue the conversation. Together, we can make a real difference and help to accelerate global goals.  Let's work together to build a brighter tomorrow for all, everywhere!</p>
         <br/><br></br>
         <div className="">
-                            <a  href="https://www.paypal.com/donate?hosted_button_id=K4KPD2FK2HSMS">
+                            <a  target={'_blank'} href="https://www.paypal.com/donate?hosted_button_id=K4KPD2FK2HSMS">
                             <strong className='underline text-blue-700 hover:text-black font-bold font-bold md:text-3xl lg:text-3xl'>BECOME A DONOR</strong>
                             </a><br></br><br></br>
 
@@ -110,9 +110,9 @@ const Donate = () => {
                           <strong className='my-colour font-bold md:text-3xl lg:text-3xl'>BECOME A SPONSOR</strong>
                           <div className="flex items-center gridContainer2 space-y-5 mx-auto">
                             <div className="pl-20 iSpA-dU2">
-                            <a  href="https://opencollective.com/deepdatadetectives">
+                            <a target={'_blank'} href="https://opencollective.com/deepdatadetectives">
                                 <p>
-                                    <img src={openc} style={{ maxHeight: '250px' }}></img>
+                                    <img src={openc} style={{ maxHeight: '250px' }}/>
                                 </p>
                                 </a>
                             </div>

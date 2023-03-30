@@ -71,7 +71,7 @@ const Progress = () => {
         </div>
 
         <span className="iSpA-dU2">Deep Data Detectives (D3) is a flagship initiative of the <a
-            className="my-colour underline" href="https://nxtwavefounders.com/">NxtWave</a>, a 501 (c)(3) organization working on global economic mobility.</span><br/>
+            className="my-colour underline" target={'_blank'} href="https://nxtwavefounders.com/">NxtWave</a>, a 501 (c)(3) organization working on global economic mobility.</span><br/>
 
     </div>)
 }

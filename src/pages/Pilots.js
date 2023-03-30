@@ -86,7 +86,7 @@ const Pilots = () => {
 
 
                     <div>
-                    <h3 className="font-extrabold md:text-1xl lg:text-1xl">Ready to join our research team?<br></br><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Register your interest. </a> </h3><br></br>
+                    <h3 className="font-extrabold md:text-1xl lg:text-1xl">Ready to join our research team?<br></br><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' target={'_blank'} href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Register your interest. </a> </h3><br></br>
                                     <div>
                                     {/* <UserTable/> */}
                                     </div>
@@ -117,7 +117,7 @@ const Pilots = () => {
 
            <p className="my-colour"> SHOWCASE YOUR IDEAS TO IMPROVE HEALTH AND WELL-BEING, CREATING JOBS AND SAVING MONEY TO CREATE A RESILIENT FAMILY AND SOCIETY. </p><br/>
            <p> Join the National Event: Recipes for Equity. </p><br/>
-           <p> Create your own event in-person and go virtual in <a className="my-colour underline" href = "https://www.tiktok.com/@nxtwavefounders?lang=en">Tiktok</a> #D3sEquityRecipes </p><br/>
+           <p> Create your own event in-person and go virtual in <a target={'_blank'} className="my-colour underline" href = "https://www.tiktok.com/@nxtwavefounders?lang=en">Tiktok</a> #D3sEquityRecipes </p><br/>
            <p> Join the National Event: Recipes for Equity. </p><br/>
            </div>
            

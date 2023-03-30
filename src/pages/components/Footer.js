@@ -19,10 +19,10 @@ export default function Footer() {
                             <Box display={"flex"} flexDirection={"row"} alignItems={"left"}
                                  justifyContent={"flex-start"} height={"100%"}>
                                 <Box my={1} mx={1} component={Link} to="/">
-                                    <img className="new-element" src={d3Logo} width="120" alt="d3Logo"/>
+                                    <img className="new-element" src={d3Logo} width="70" alt="d3Logo"/>
                                 </Box>
-                                <Box my={1} component={"a"} href="https://nxtwavefounders.com/">
-                                    <img className="new-element" src={nxtLogo} width="120" alt="nxtLogo"/>
+                                <Box my={1} component={"a"} href="https://nxtwavefounders.com/" target={'_blank'}>
+                                    <img className="new-element" src={nxtLogo} width="70" alt="nxtLogo"/>
                                 </Box>
                             </Box>
                         </Grid>
@@ -79,7 +79,7 @@ export default function Footer() {
                     <Grid pt={4} direction={"row"} justifyContent={"space-between"} container>
                         <Grid xs={6} item>
                             <div className="flex m-4 space-x-6 sm:justify-start">
-                                <a href="https://www.facebook.com/nxtwave.founders"
+                                <a target={'_blank'} href="https://www.facebook.com/nxtwave.founders"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fillRule="evenodd"
@@ -88,7 +88,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">Facebook page</span>
                                 </a>
-                                <a href="https://www.instagram.com/nxtwavefounders/"
+                                <a target={'_blank'} href="https://www.instagram.com/nxtwavefounders/"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fillRule="evenodd"
@@ -97,7 +97,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">Instagram page</span>
                                 </a>
-                                <a href="https://twitter.com/NxtWave_"
+                                <a target={'_blank'} href="https://twitter.com/NxtWave_"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path
@@ -105,7 +105,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">Twitter page</span>
                                 </a>
-                                <a href="https://www.tiktok.com/@nxtwavefounders?lang=en"
+                                <a target={'_blank'} href="https://www.tiktok.com/@nxtwavefounders?lang=en"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 512.00 512.00"
                                          aria-hidden="true">
@@ -114,7 +114,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">TikTok page</span>
                                 </a>
-                                <a href="https://www.linkedin.com/company/nxt-wave-founders-inc/"
+                                <a target={'_blank'} href="https://www.linkedin.com/company/nxt-wave-founders/"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path

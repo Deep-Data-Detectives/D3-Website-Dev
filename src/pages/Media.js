@@ -14,6 +14,7 @@ const Media = () => {
             </Typography>
             <Typography variant={"body1"} component={"p"}>
                 <Link
+                    target={'_blank'}
                     href={"https://venturebeat.com/games/riot-games-ideo-design-challenge-winners-designing-digital-thriving/"}>VentureBeat</Link> on
                 D3 Adventures, a flagship initiative of nonprofit, Nxt Wave</Typography>
             <Typography variant="h3" component="h2">

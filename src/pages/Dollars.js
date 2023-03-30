@@ -36,10 +36,10 @@ const Dollars = () => {
         </ul>
         <br></br>
         <Typography paragraph>
-            <span><a className="my-colour underline"
+            <span><a target={'_blank'} className="my-colour underline"
                      href="https://docs.google.com/document/d/1hP8OuwY3RKzSN3fDAU96QtK5Xfpsczew/edit?usp=sharing&ouid=101937233694036949421&rtpof=true&sd=true">Learn more about the program's eligibility and evaluation standards</a>, and take the first step towards making an impact.</span><br/><br/>
 
-            <span><a className="my-colour underline"
+            <span><a target={'_blank'} className="my-colour underline"
                      href="https://docs.google.com/forms/d/e/1FAIpQLSf_VtoCINthNRFyrE80lfSCxz3AC-tdQHOEyhR0-Cc3MZa2GQ/viewform?usp=sf_link">Apply now</a> and turn your hours into dollars for a better world!</span>
 
         </Typography>

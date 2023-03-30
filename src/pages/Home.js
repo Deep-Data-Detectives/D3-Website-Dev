@@ -184,6 +184,7 @@ const Home = () => {
                         <p className="my-colour font-extrabold md:text-3xl lg:text-4xl">Become a [D3]</p><br></br>
                         <span className=''>Join a global community of eco-warriors accelerating economic opportunity for all.</span>
                         <h3 className="font-extrabold md:text-1xl lg:text-1xl"><br></br> <a
+                            target={'_blank'}
                             className=' underline text-blue-700 hover:text-black font-bold'
                             href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join
                             The Waitlist </a></h3>
