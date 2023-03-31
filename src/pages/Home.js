@@ -75,7 +75,9 @@ const Home = () => {
                                 className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                                 <HashLink
                                     className="bg-blue-700 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-blue-500 dark:focus:ring-gray-800"
-                                    to="../pilots2#second">
+                                    to="../pilots2#second"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
 
                                     &nbsp;PLAY THE GAME
                                 </HashLink>
@@ -295,7 +297,9 @@ const Home = () => {
                         <br/>
                         <h3 className="font-extrabold md:text-2xl lg:text-2xl"><br/> <a
                             className=' underline text-blue-700 hover:text-black font-bold'
-                            href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link '> Join
                             The Waitlist </a></h3>
 
                     </Typography><br/>
