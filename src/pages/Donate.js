@@ -54,25 +54,34 @@ const Donate = () => {
         <div className="">
                             <a  target={'_blank'} href="https://www.paypal.com/donate?hosted_button_id=K4KPD2FK2HSMS">
                             <strong className='underline text-blue-700 hover:text-black font-bold font-bold md:text-3xl lg:text-3xl'>BECOME A DONOR</strong>
-                            </a><br></br><br></br>
+                            </a><br></br><br></br><br></br>
 
                             <div className="grid-container6">
+                            <div className="grid-item6">
+                            <p>
+                            </p>
+                          </div>
                           <div className="grid-item6">
                             <img
                               className="my-element right"
                               src={donation}
                               alt="Image 1"
-                              style={{ width: '60%' }}
+                              style={{ width: '80%' }}
                             />
                           </div>
-                          <div className="grid-item6">
+                          <div className="grid-item6 md:text-xl sm:text-sm">
                             <p>
                               Our backers, donors, and sponsors are mission-aligned and are
-                              committed to making a positive impact in the world. We would love to
+                              committed to making a positive impact in the world. <br></br>We would love to
                               hear from you and continue the conversation. Together, we can make a
                               real difference and help to accelerate global goals.
                             </p>
                           </div>
+                          <div className="grid-item6">
+                            <p>
+                            </p>
+                          </div>
+                          
                         </div><br></br><br></br><br></br>
       
 
@@ -111,6 +120,10 @@ const Donate = () => {
 
                           <strong className='my-colour font-bold md:text-3xl lg:text-3xl'>BECOME A SPONSOR</strong>
                           <div className="flex items-center grid-container6 space-y-5 mx-auto">
+                            <div className="grid-item6">
+                            <p>
+                            </p>
+                            </div>
                             <div className="pl-20">
                             <a target={'_blank'} href="https://opencollective.com/deepdatadetectives">
                                 <p>
@@ -122,6 +135,10 @@ const Donate = () => {
                                 <p>
                                     Let's work together to build a brighter tomorrow for all, everywhere!
                                 </p>
+                            </div>
+                            <div className="grid-item6">
+                            <p>
+                            </p>
                             </div>
                         </div>
                         <br></br>
