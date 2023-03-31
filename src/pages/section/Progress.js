@@ -49,7 +49,7 @@ const Progress = () => {
                 <p><br/>
                     Inspiring storytelling feeds D3 players the knowledge to understand how
                     they fit in their roles presenting opportunities for user education in an
-                    immersive game-play.{" "}
+                    immersive game-play.
                     <Link target={'_blank'} className="my-colour underline" to="/pilots2"><br/>
                         Learn more
                     </Link>
@@ -62,7 +62,7 @@ const Progress = () => {
                 <p>
                     Every woman deserves a voice and the opportunity to be heard, respected,
                     and valued. Join our contest dedicated for women to share their stories,
-                    ideas, and perspectives.{" "}
+                    ideas, and perspectives.
                     <Link target={'_blank'} className="my-colour underline" to="/pilots3">
                         Learn more
                     </Link>
