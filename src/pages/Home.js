@@ -12,9 +12,9 @@ import picture1 from "./images/Picture1.png";
 import picture2 from "./images/Picture2.png";
 import picture3 from "./images/Picture3.png";
 import picture4 from "./images/Picture4.png";
-import linkedin from "./images/linkedin.jpg";
 import playGame from "./images/High Res Images/PLAY T HE GAME.jpg";
 import {HashLink} from 'react-router-hash-link';
+import qrcode from "./images/QR Code.png"
 
 
 import {Grid, Typography} from "@mui/material";
@@ -34,7 +34,7 @@ const Home = () => {
 
     return (
 
-        
+
         <div id='main' className='main-div'>
             {loading ? (<div className="spinner-container">
                 <PulseLoader color="#36D7B7" size={15}/>
@@ -245,19 +245,15 @@ const Home = () => {
 
                     {/*</Typography>*/}
 
-                    <Grid my={5} container>
+                    <Grid alignItems={"center"} my={5} container>
                         <Grid item xs={4}>
-                            <Typography className="text-center"
-                                        gutterBottom>
-                                <div className='md:text-3xl lg:text-2xl'>
-                                    Check
-                                    <Link
-                                        className=" ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"
-                                        to="/story">
-                                        Our Story
-                                    </Link>
-                                </div>
-
+                            <Typography textAlign={"center"} fontWeight={"bolder"} fontSize={'x-large'}>
+                                Check
+                                <Link
+                                    className="ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"
+                                    to="/story">
+                                    Our Story
+                                </Link>
                             </Typography></Grid>
                         <Grid item xs={4}>
                             <Typography className="text-center" gutterBottom>
@@ -287,27 +283,26 @@ const Home = () => {
                                     >
                                         Donate Today
                                     </button>
-
                                 </HashLink>
-                            </Typography></Grid>
+                            </Typography>
+                            <div style={{display: "flex", justifyContent: "center"}}>
+                                <img
+                                    src={qrcode}
+                                    alt="QR Code"
+                                    width="200"
+                                    height="200"
+                                />
+                            </div>
+                        </Grid>
                         <Grid item xs={4}>
-                            <h3 className="text-center font-extrabold md:text-2xl lg:text-2xl"><br/> <a
-                                className=' underline text-blue-700 hover:text-black font-bold'
+                            <h3 className="text-center md:text-2xl lg:text-2xl"><br/> <a
+                                className='underline text-blue-700 hover:text-black font-bold'
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link '> Join
-                                The Waitlist </a></h3>
-
-
+                                The Waitlist</a></h3>
                         </Grid>
-                        {/*<div style={{display: "flex", justifyContent: "center"}}>*/}
-                        {/*    <img*/}
-                        {/*        src={qrcode}*/}
-                        {/*        alt="QR Code"*/}
-                        {/*        width="200"*/}
-                        {/*        height="200"*/}
-                        {/*    />*/}
-                        {/*</div>*/}</Grid>
+                    </Grid>
 
 
                 </section>)}
