@@ -3,7 +3,7 @@ import {Box, Container, Typography} from "@mui/material";
 import internships from "./images/internships.png";
 
 const Internships = () => {
-    return (<Container id='main' maxWidth="xl main-div">
+    return (<Container id='main' maxWidth="100%">
         <br/><br/><br/>
         <div className="my-colour font-extrabold mx-auto max-w-screen-xl text-center"><br/>
             <Typography variant="h3" gutterBottom>
@@ -12,8 +12,8 @@ const Internships = () => {
         </div>
         <br/>
 
-        <Box className="my-element mx-auto" component="img" src={internships} alt=""
-             sx={{height: '60%', width: '60%'}}/><br/><br/>
+        <Box className="my-element mx-auto" component="img" src={internships} alt="internships"
+             minWidth={"100%"}/><br/><br/>
 
         <Typography style={{textAlign: "justify"}} variant="h6" paragraph>
             Empower Your Career with the D3 Internship Program!

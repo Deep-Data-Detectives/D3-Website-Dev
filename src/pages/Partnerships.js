@@ -14,7 +14,7 @@ const Partnerships = () => {
     return (<Container id='main' maxWidth="xl main-div">
         <br/><br/><br/>
         <div className="mx-auto max-w-screen-xl text-center"><br/>
-            <Typography variant="h3" gutterBottom>
+            <Typography color={"darkblue"} variant="h3" gutterBottom>
                 <strong>Advancing your corporation or foundation's philanthropic and social impact goals</strong>
             </Typography>
             <Typography variant="h6" gutterBottom>
@@ -80,7 +80,8 @@ const Partnerships = () => {
                 difference for yourself!
             </Typography><br/>
             <Typography variant="h6" gutterBottom>
-                <strong><a className="my-colour underline" target={'_blank'} href="https://opencollective.com/deepdatadetectives">Partner
+                <strong><a className="my-colour underline" target={'_blank'}
+                           href="https://opencollective.com/deepdatadetectives">Partner
                     with Us</a></strong>
             </Typography><br/>
             <Typography variant="h6" gutterBottom>
