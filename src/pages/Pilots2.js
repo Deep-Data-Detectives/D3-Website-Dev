@@ -11,11 +11,11 @@ const Pilots = () => {
     return (<div className='main-div'>
 
         <section>
-            <div id='first' className="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
+            <div id='second' className="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
 
                 <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Welcome to [D3s] Everywhere! Game</h1><br/><br/>
                 
-                <div id='second'>
+                <div id=''>
 
                 <h2 className="font-extrabold md:text-3xl lg:text-4xl"></h2><br></br>
                                 <img className="flex my-element mx-auto" src={pilot1} maxw="850" height="550"/><br></br><br></br>
