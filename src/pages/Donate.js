@@ -66,10 +66,10 @@ const Donate = () => {
                               className="my-element right"
                               src={donation}
                               alt="Image 1"
-                              style={{ width: '80%' }}
+                              style={{ width: '90%' }}
                             />
                           </div>
-                          <div className="grid-item6 md:text-xl sm:text-sm">
+                          <div className="grid-item6">
                             <p>
                               Our backers, donors, and sponsors are mission-aligned and are
                               committed to making a positive impact in the world. <br></br>We would love to
@@ -124,14 +124,14 @@ const Donate = () => {
                             <p>
                             </p>
                             </div>
-                            <div className="pl-20">
+                            <div className="pl-30">
                             <a target={'_blank'} href="https://opencollective.com/deepdatadetectives">
                                 <p>
-                                    <img src={openc} style={{ maxHeight: '250px' }}/>
+                                    <img src={openc} style={{ maxHeight: '200px' }}/>
                                 </p>
                                 </a>
                             </div>
-                            <div className="items-center pr-20 ">
+                            <div className="items-center pr-30 grid-item6">
                                 <p>
                                     Let's work together to build a brighter tomorrow for all, everywhere!
                                 </p>
