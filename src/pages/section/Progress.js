@@ -4,6 +4,7 @@ import img2 from "../images/Instagram WINNER post - 34.png"
 import img3 from "../images/live.JPG"
 import img4 from "../images/embrace equity for women.JPG"
 import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 
 
 const Progress = () => {
@@ -37,9 +38,9 @@ const Progress = () => {
                     @scefdn.<br/><br/>
                     We celebrate small wins and recognize our D3s with rewards and economic opportunities.
                 </p><br/>
-                <Link target={'_blank'} className="my-colour underline " to="/pilots">
+                <HashLink className="my-colour underline " to="/pilots#first">
                     Learn about
-                    </Link>
+                    </HashLink>
                     &nbsp;our Impact and Assessment.
             </div>
             <div className="grid-item ">
@@ -50,9 +51,9 @@ const Progress = () => {
                     Inspiring storytelling feeds D3 players the knowledge to understand how
                     they fit in their roles presenting opportunities for user education in an
                     immersive game-play.
-                    <Link target={'_blank'} className="my-colour underline" to="/pilots2"><br/>
+                    <HashLink className="my-colour underline" to="/pilots2#second"><br/>
                         Learn more
-                    </Link>
+                    </HashLink>
                 </p>
             </div>
             <div className="grid-item ">
@@ -63,9 +64,9 @@ const Progress = () => {
                     Every woman deserves a voice and the opportunity to be heard, respected,
                     and valued. Join our contest dedicated for women to share their stories,
                     ideas, and perspectives.
-                    <Link target={'_blank'} className="my-colour underline" to="/pilots3">
+                    <HashLink className="my-colour underline" to="/pilots3#third">
                         Learn more
-                    </Link>
+                    </HashLink>
                 </p>
             </div>
         </div>
