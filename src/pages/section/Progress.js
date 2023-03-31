@@ -3,6 +3,7 @@ import img from "../images/img.jpg"
 import img2 from "../images/Instagram WINNER post - 34.png"
 import img3 from "../images/live.JPG"
 import img4 from "../images/embrace equity for women.JPG"
+import {Link} from 'react-router-dom';
 
 
 const Progress = () => {
@@ -36,10 +37,10 @@ const Progress = () => {
                     @scefdn.<br/><br/>
                     We celebrate small wins and recognize our D3s with rewards and economic opportunities.
                 </p><br/>
-                <a target={'_blank'} className="my-colour underline " href="/pilots">
+                <Link target={'_blank'} className="my-colour underline " to="/pilots">
                     Learn about
-                </a>{" "}
-                our Impact and Assessment.
+                    </Link>
+                    &nbsp;our Impact and Assessment.
             </div>
             <div className="grid-item ">
                 <strong><h3>Pilot 2: [D3s] Everywhere!</h3></strong><br/>
@@ -49,9 +50,9 @@ const Progress = () => {
                     Inspiring storytelling feeds D3 players the knowledge to understand how
                     they fit in their roles presenting opportunities for user education in an
                     immersive game-play.{" "}
-                    <a target={'_blank'} className="my-colour underline" href="/pilots2"><br/>
+                    <Link target={'_blank'} className="my-colour underline" to="/pilots2"><br/>
                         Learn more
-                    </a>
+                    </Link>
                 </p>
             </div>
             <div className="grid-item ">
@@ -62,9 +63,9 @@ const Progress = () => {
                     Every woman deserves a voice and the opportunity to be heard, respected,
                     and valued. Join our contest dedicated for women to share their stories,
                     ideas, and perspectives.{" "}
-                    <a target={'_blank'} className="my-colour underline" href="/pilots3">
+                    <Link target={'_blank'} className="my-colour underline" to="/pilots3">
                         Learn more
-                    </a>
+                    </Link>
                 </p>
             </div>
         </div>
