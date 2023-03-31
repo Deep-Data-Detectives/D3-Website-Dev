@@ -34,6 +34,7 @@ const Home = () => {
 
     return (
 
+        
         <div id='main' className='main-div'>
             {loading ? (<div className="spinner-container">
                 <PulseLoader color="#36D7B7" size={15}/>
