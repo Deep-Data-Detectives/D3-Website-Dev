@@ -38,7 +38,7 @@ const Progress = () => {
                     @scefdn.<br/><br/>
                     We celebrate small wins and recognize our D3s with rewards and economic opportunities.
                 </p><br/>
-                <HashLink className="my-colour underline " to="/pilots#first">
+                <HashLink className="my-colour underline " target={'_blank'} to="/pilots#first">
                     Learn about
                     </HashLink>
                     &nbsp;our Impact and Assessment.
@@ -51,7 +51,7 @@ const Progress = () => {
                     Inspiring storytelling feeds D3 players the knowledge to understand how
                     they fit in their roles presenting opportunities for user education in an
                     immersive game-play.
-                    <HashLink className="my-colour underline" to="/pilots2#second"><br/>
+                    <HashLink className="my-colour underline" target={'_blank'} to="/pilots2#second"><br/>
                         Learn more
                     </HashLink>
                 </p>
@@ -64,7 +64,7 @@ const Progress = () => {
                     Every woman deserves a voice and the opportunity to be heard, respected,
                     and valued. Join our contest dedicated for women to share their stories,
                     ideas, and perspectives.
-                    <HashLink className="my-colour underline" to="/pilots3#third">
+                    <HashLink className="my-colour underline" target={'_blank'} to="/pilots3#third">
                         Learn more
                     </HashLink>
                 </p>
