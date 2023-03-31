@@ -460,24 +460,24 @@ font-family: "Inter", sans-serif;
   }
   
   .grid-item6 p {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   @media screen and (max-width: 768px) {
     .grid-item6 p {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   
   @media screen and (max-width: 480px) {
     .grid-item6 p {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   
   @media screen and (max-width: 360px) {
     .grid-item6 p {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
   
