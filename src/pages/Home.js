@@ -17,7 +17,7 @@ import playGame from "./images/High Res Images/PLAY T HE GAME.jpg";
 import {HashLink} from 'react-router-hash-link';
 
 
-import {Typography} from "@mui/material";
+import {Grid, Typography} from "@mui/material";
 
 // const images = [collage, d3comp];
 
@@ -222,18 +222,8 @@ const Home = () => {
                         </div>
                     </Typography>
 
-                    <br></br>
-                    <Typography className="text-center"
-                                gutterBottom>
-                        <div className='md:text-3xl lg:text-2xl'>
-                            Check
-                            <Link className=" ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"
-                                  to="/story">
-                                Our Story
-                            </Link>
-                        </div>
+                    <br/>
 
-                    </Typography>
                     {/*<Typography className="text-center "*/}
                     {/*            gutterBottom>*/}
                     {/*    <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"*/}
@@ -254,38 +244,62 @@ const Home = () => {
                     {/*    </Link>*/}
 
                     {/*</Typography>*/}
-                    <br/><br/>
-                    <Typography className="text-center" gutterBottom>
-                        <div className="my-colour font-extrabold md:text-3xl lg:text-3xl">
-                            Ready To Join Forces
-                        </div>
-                    </Typography><br/>
-                    <Typography className="text-center" variant="h6" gutterBottom>
-                        Help us continue our work.{" "}
-                        <HashLink className="" to="./donate#main">
-                            <button
-                                style={{
-                                    backgroundColor: "orange",
-                                    borderRadius: "25px",
-                                    padding: "12px 20px",
-                                    fontSize: "16px",
-                                    fontWeight: "bold",
-                                    color: "black",
-                                    border: "none",
-                                    boxShadow: "0px 0px 0px rgba(255, 255, 0, 0.7)",
-                                    cursor: "pointer",
-                                    outline: "none",
-                                    transition: "box-shadow 0.1s ease-in-out"
-                                }}
-                                onMouseEnter={(e) => e.target.style.boxShadow = "0px 0px 25px rgba(255, 255, 0, 0.9)"}
-                                onMouseLeave={(e) => e.target.style.boxShadow = "0px 0px 5px rgba(255, 255, 0, 0.7)"}
-                            >
-                                Donate Today
-                            </button>
-                        </HashLink>
 
-                        <br/>
+                    <Grid my={5} container>
+                        <Grid item xs={4}>
+                            <Typography className="text-center"
+                                        gutterBottom>
+                                <div className='md:text-3xl lg:text-2xl'>
+                                    Check
+                                    <Link
+                                        className=" ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"
+                                        to="/story">
+                                        Our Story
+                                    </Link>
+                                </div>
 
+                            </Typography></Grid>
+                        <Grid item xs={4}>
+                            <Typography className="text-center" gutterBottom>
+                                <div className="my-colour font-extrabold md:text-3xl lg:text-3xl">
+                                    Ready To Join Forces
+                                </div>
+                            </Typography>
+                            <Typography className="text-center" variant="h6" gutterBottom>
+                                Help us continue our work.{" "}
+                                <HashLink className="" to="./donate#main">
+                                    <button
+                                        style={{
+                                            backgroundColor: "orange",
+                                            borderRadius: "25px",
+                                            padding: "12px 20px",
+                                            fontSize: "16px",
+                                            fontWeight: "bold",
+                                            color: "black",
+                                            border: "none",
+                                            boxShadow: "0px 0px 0px rgba(255, 255, 0, 0.7)",
+                                            cursor: "pointer",
+                                            outline: "none",
+                                            transition: "box-shadow 0.1s ease-in-out"
+                                        }}
+                                        onMouseEnter={(e) => e.target.style.boxShadow = "0px 0px 25px rgba(255, 255, 0, 0.9)"}
+                                        onMouseLeave={(e) => e.target.style.boxShadow = "0px 0px 5px rgba(255, 255, 0, 0.7)"}
+                                    >
+                                        Donate Today
+                                    </button>
+
+                                </HashLink>
+                            </Typography></Grid>
+                        <Grid item xs={4}>
+                            <h3 className="text-center font-extrabold md:text-2xl lg:text-2xl"><br/> <a
+                                className=' underline text-blue-700 hover:text-black font-bold'
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link '> Join
+                                The Waitlist </a></h3>
+
+
+                        </Grid>
                         {/*<div style={{display: "flex", justifyContent: "center"}}>*/}
                         {/*    <img*/}
                         {/*        src={qrcode}*/}
@@ -293,16 +307,7 @@ const Home = () => {
                         {/*        width="200"*/}
                         {/*        height="200"*/}
                         {/*    />*/}
-                        {/*</div>*/}
-                        <br/>
-                        <h3 className="font-extrabold md:text-2xl lg:text-2xl"><br/> <a
-                            className=' underline text-blue-700 hover:text-black font-bold'
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link '> Join
-                            The Waitlist </a></h3>
-
-                    </Typography><br/>
+                        {/*</div>*/}</Grid>
 
 
                 </section>)}
