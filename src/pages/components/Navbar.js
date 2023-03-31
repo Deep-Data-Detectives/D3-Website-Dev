@@ -19,6 +19,7 @@ export default function Navbar(props) {
         const detectivesText = document.querySelector('.deep-data-text');
         const waitlistButton = document.querySelector('.waitlist-button');
       
+        // Check if both elements exist
         if (!detectivesText || !waitlistButton) {
           return;
         }
@@ -37,19 +38,21 @@ export default function Navbar(props) {
       
       
 
-    useEffect(() => {
-    checkOverlap();
-    
-    const handleResize = () => {
+      useEffect(() => {
         checkOverlap();
-    };
-    
-    window.addEventListener('resize', handleResize);
-    
-    return () => {
-        window.removeEventListener('resize', handleResize);
-    };
-    }, []);
+      
+        // Call the checkOverlap function when the window is resized
+        const handleResize = () => {
+          checkOverlap();
+        };
+      
+        window.addEventListener('resize', handleResize);
+      
+        // Cleanup the event listener when the component is unmounted
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
       
 
     useEffect(() => {
@@ -78,7 +81,7 @@ export default function Navbar(props) {
             DEEP DATA DETECTIVES
           </span>
         </div>
-        <div className={"my-colour top-1 fixed right-10 pt-1 transition-all ease-in-out duration-300"}>
+        <div className={"my-colour top-1 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>
         {!isOverlapping && (
                 <div>
                     <a
