@@ -76,7 +76,7 @@ const Home = () => {
                                 className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                                 <HashLink
                                     className="bg-blue-700 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-blue-500 dark:focus:ring-gray-800"
-                                    to="../pilots2#second"
+                                    to="pilots2#second"
                                     target="_blank">
 
                                     &nbsp;PLAY THE GAME
