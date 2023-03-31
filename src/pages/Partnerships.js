@@ -13,7 +13,7 @@ import arclogo from "./images/ARC Logo.png";
 const Partnerships = () => {
     return (<Container id='main' maxWidth="xl main-div">
         <br/><br/><br/>
-        <div className="mx-auto max-w-screen-xl text-center"><br/>
+        <div className="mx-auto text-center"><br/>
             <Typography color={"darkblue"} variant="h3" gutterBottom>
                 <strong>Advancing your corporation or foundation's philanthropic and social impact goals</strong>
             </Typography>
