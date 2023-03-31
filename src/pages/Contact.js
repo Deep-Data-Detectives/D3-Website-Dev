@@ -26,7 +26,7 @@ const Contact = () => {
     <div className="flex flex-col items-center py-20">
       <ScrollToTop />
       <div className="w-full h-44">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 iSpA-dU4">
           <h1 className="text-3xl font-bold mb-4">Get in touch with us today!</h1>
           <p className="">At Deep Data Detectives (D3), we're always here to help.</p>
         </div>
@@ -109,7 +109,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="iSpA-dU2 my-8 space-y-4 w-4/5">
+      <div className="my-8 space-y-4 w-4/5">
         <p className="flex justify-left">
           Whether you have a question, need assistance, or want to learn more about our products and services, our friendly and knowledgeable team is ready to assist you.
         </p>

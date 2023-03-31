@@ -26,13 +26,13 @@ const Dollars = () => {
             We welcome career professionals in the following industries:
         </Typography>
         <Typography fontSize={"x-large"} component={"ul"} className="list-disc ullist1">
-            <li>Artificial Intelligence</li>
-            <li>UX Design</li>
-            <li>Game Design</li>
-            <li>UX Urban Design</li>
-            <li>Software Development</li>
-            <li>Data Analytics</li>
-            <li>Market Research and Marketing</li>
+            <li className="ml-5">Artificial Intelligence</li>
+            <li className="ml-5"> UX Design</li>
+            <li className="ml-5">Game Design</li>
+            <li className="ml-5">UX Urban Design</li>
+            <li className="ml-5">Software Development</li>
+            <li className="ml-5">Data Analytics</li>
+            <li className="ml-5">Market Research and Marketing</li>
         </Typography>
         <br></br>
         <Typography fontSize={"x-large"} paragraph>

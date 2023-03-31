@@ -114,7 +114,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">TikTok page</span>
                                 </a>
-                                <a target={'_blank'} href="https://www.linkedin.com/company/nxt-wave-founders/"
+                                <a target={'_blank'} href="https://www.linkedin.com/company/nxt-wave-founders/about/?viewAsMember=true"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path

@@ -19,7 +19,7 @@ const Offer = () => {
                 <Link
                     alignSelf={"center"}
                     component={HashLink}
-                    to={"/dollars#top"}>
+                    to={"/dollars#top"}><br></br>
                     Register your interest</Link>
             </Grid>
             <Grid display={"flex"} flexDirection={"column"} p={1} xs={4} item>
@@ -27,7 +27,7 @@ const Offer = () => {
                 <Link
                     alignSelf={"center"}
                     component={HashLink}
-                    to={"/internships#top"}>
+                    to={"/internships#top"}><br></br>
                     Register your interest</Link>
             </Grid>
             <Grid display={"flex"} flexDirection={"column"} p={1} xs={4} item>
@@ -35,10 +35,10 @@ const Offer = () => {
                 <Link
                     alignSelf={"center"}
                     component={HashLink}
-                    to={"/fellowship#top"}>
+                    to={"/fellowship#top"}><br></br>
                     Register your interest</Link>
             </Grid>
-        </Grid>
+        </Grid><br></br>
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Job Creation</Typography>
         <Grid px={2} direction={"row"} container>
             <Grid p={1} xs={6} item>
