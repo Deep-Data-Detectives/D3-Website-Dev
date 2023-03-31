@@ -13,6 +13,34 @@ export default function Navbar(props) {
     const [navbarOpen, setNavbarOpen] = useState(false);
     const selectd = props.selected;
 
+    const [isOverlapping, setIsOverlapping] = useState(false);
+
+    const checkOverlap = () => {
+    const detectivesText = document.querySelector('.deep-data-text');
+    const waitlistButton = document.querySelector('.waitlist-button');
+
+    const rect1 = detectivesText.getBoundingClientRect();
+    const rect2 = waitlistButton.getBoundingClientRect();
+
+    const overlap =
+        rect1.right > rect2.left &&
+        rect1.left < rect2.right &&
+        rect1.top < rect2.bottom &&
+        rect1.bottom > rect2.top;
+
+    setIsOverlapping(overlap);
+    };
+
+    useEffect(() => {
+    checkOverlap();
+
+    window.addEventListener('resize', checkOverlap);
+
+    return () => {
+        window.removeEventListener('resize', checkOverlap);
+    };
+    }, []);
+
     useEffect(() => {
         if (navbarOpen) {
             document.body.style.overflow = 'hidden';
@@ -40,24 +68,27 @@ export default function Navbar(props) {
           </span>
         </div>
         <div className={"my-colour top-2 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>
-          <div>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                className="inline-flex items-center p-1 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full"
-                style={{ zIndex: 1 }}
-                onClick={() => setNavbarOpen(false)}
-              >
-                <span style={{ zIndex: 1 }} className="text-white">
-                  Join the Waitlist
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
+        {!isOverlapping && (
+                <div>
+                    <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <button
+                        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full sm:w-auto mr-3 waitlist-button"
+                        style={{ zIndex: 1 }}
+                        onClick={() => setNavbarOpen(false)}
+                    >
+                        <span style={{ zIndex: 1 }} className="text-white">
+                        Join the Waitlist
+                        </span>
+                    </button>
+                    </a>
+                </div>
+                )}
+
+                    </div>
 
                     <button
                         data-collapse-toggle=""
