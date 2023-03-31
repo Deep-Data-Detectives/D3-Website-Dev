@@ -3,7 +3,7 @@ import {Box, Container, Typography} from "@mui/material";
 import internships from "./images/internships.png";
 
 const Internships = () => {
-    return (<Container id='main' maxWidth="xl main-div">
+    return (<Container id='main' maxWidth="100%">
         <br/><br/><br/>
         <div className="my-colour font-extrabold mx-auto max-w-screen-xl text-center"><br/>
             <Typography variant="h3" gutterBottom>
@@ -12,8 +12,8 @@ const Internships = () => {
         </div>
         <br/>
 
-        <Box className="my-element mx-auto" component="img" src={internships} alt=""
-             sx={{height: '60%', width: '60%'}}/><br/><br/>
+        <Box className="my-element mx-auto" component="img" src={internships} alt="internships"
+             minWidth={"100%"}/><br/><br/>
 
         <Typography style={{textAlign: "justify"}} variant="h6" paragraph>
             Empower Your Career with the D3 Internship Program!
@@ -54,7 +54,7 @@ const Internships = () => {
             on a monthly basis based on performance. A $500 dollar stipend payable monthly to successful interns.
         </Typography>
         <Typography style={{textAlign: "justify"}} variant="h6" paragraph>
-            At the end of your internship, if you meet the <a className="my-colour underline"
+            At the end of your internship, if you meet the <a target={'_blank'} className="my-colour underline"
                                                               href="https://docs.google.com/document/d/1Rxo0ILMLqOQazHniN1E-WQJQdIbN89N4/edit?usp=share_link&ouid=101937233694036949421&rtpof=true&sd=true">D3
             Internship Standards</a>, you will get:
             <ul className="list-disc ullist1">
@@ -67,7 +67,7 @@ const Internships = () => {
             first step towards a successful career in the digital economy!"
         </Typography>
         <Typography style={{textAlign: "justify"}} variant="h6" paragraph>
-            Register your interest <a className="my-colour underline"
+            Register your interest <a target={'_blank'} className="my-colour underline"
                                       href="https://docs.google.com/forms/d/e/1FAIpQLSfpGeiQ6ahvbswCL4qK2YHfxMxw5f5PbGelEd0JxG-WPFg8xQ/viewform?usp=sf_link">here</a>.
         </Typography>
     </Container>);

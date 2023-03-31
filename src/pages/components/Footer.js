@@ -10,48 +10,76 @@ export default function Footer() {
             <Box
                 component="footer" className="new-element"
                 sx={{
-                    py: 7, px: 5, mt: '10px', backgroundColor: '#000099'
+                    py: 5, px: 5, mt: '10px', backgroundColor: '#000099'
                 }}
             >
                 <Stack direction={"column"} spacing={2}>
-                <Grid container direction={"row"}>
-                    <Grid item xs={6} md={6}>
-                        <Box display={"flex"} flexDirection={"row"} alignItems={"left"} justifyContent={"flex-start"} height={"100%"}>
-                            <Box my={1} mx={1} component={Link} to="/">
-                                <img className="new-element" src={d3Logo} width="200" alt="d3Logo"/>
+                    <Grid container direction={"row"}>
+                        <Grid item xs={6} md={6}>
+                            <Box display={"flex"} flexDirection={"row"} alignItems={"left"}
+                                 justifyContent={"flex-start"} height={"100%"}>
+                                <Box my={1} mx={1} component={Link} to="/">
+                                    <img className="new-element" src={d3Logo} width="70" alt="d3Logo"/>
+                                </Box>
+                                <Box my={1} component={"a"} href="https://nxtwavefounders.com/" target={'_blank'}>
+                                    <img className="new-element" src={nxtLogo} width="70" alt="nxtLogo"/>
+                                </Box>
                             </Box>
-                            <Box my={1} component={"a"} href="https://nxtwavefounders.com/">
-                                <img className="new-element" src={nxtLogo} width="200" alt="nxtLogo"/>
-                            </Box>
-                        </Box>
-                    </Grid>
-                        <Grid xs={6} item>
-                            <Box display={"flex"} justifyContent={"flex-end"} alignItems={"right"} height={"100%"} component={"nav"}>
+                        </Grid>
+                        <Grid xs={3} item>
+                            <Box display={"flex"} justifyContent={"flex-end"} alignItems={"right"} height={"100%"}
+                                 component={"nav"}>
                                 <Stack component={"ul"} direction={"column"}>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='/'>How We Do It</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2"
+                                                  to='/#whyD3'>Why Deep Data Detectives (D3)</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='./contact#main'>Meet The Team</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" to='/#progress'>Our
+                                            Progress</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='/'>Impact Areas</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" to='/#offer'>What We
+                                            Offer</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='./privacy#main'>Privacy</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2"
+                                                  to='/#meetTeam'>Meet The Team</HashLink>
+                                    </Typography>
+                                </Stack>
+                            </Box>
+                        </Grid>
+                        <Grid xs={3} item>
+                            <Box display={"flex"} justifyContent={"flex-end"} alignItems={"right"} height={"100%"}
+                                 component={"nav"}>
+                                <Stack component={"ul"} direction={"column"}>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2"
+                                                  to='/contact#top'>Contact</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='./diversity#main'>Diversity & Inclusion</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" to='./media#top'>Media</HashLink>
+                                    </Typography>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2" to='/'>Events</HashLink>
+                                    </Typography>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2"
+                                                  to='./privacy#top'>Privacy</HashLink>
+                                    </Typography>
+                                    <Typography color={"white"} component={"li"}>
+                                        <HashLink className="hover:underline iSpA-dU2" to='./diversity#top'>Diversity &
+                                            Inclusion</HashLink>
                                     </Typography>
                                 </Stack>
                             </Box>
                         </Grid>
                     </Grid>
 
-                    <Grid direction={"row"} justifyContent={"space-between"} container>
+                    <Grid pt={4} direction={"row"} justifyContent={"space-between"} container>
                         <Grid xs={6} item>
                             <div className="flex m-4 space-x-6 sm:justify-start">
-                                <a href="https://www.facebook.com/nxtwave.founders"
+                                <a target={'_blank'} href="https://www.facebook.com/nxtwave.founders"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fillRule="evenodd"
@@ -60,7 +88,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">Facebook page</span>
                                 </a>
-                                <a href="https://www.instagram.com/nxtwavefounders/"
+                                <a target={'_blank'} href="https://www.instagram.com/nxtwavefounders/"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fillRule="evenodd"
@@ -69,7 +97,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">Instagram page</span>
                                 </a>
-                                <a href="https://twitter.com/NxtWave_"
+                                <a target={'_blank'} href="https://twitter.com/NxtWave_"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path
@@ -77,7 +105,7 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">Twitter page</span>
                                 </a>
-                                <a href="https://www.tiktok.com/@nxtwavefounders?lang=en"
+                                <a target={'_blank'} href="https://www.tiktok.com/@nxtwavefounders?lang=en"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 512.00 512.00"
                                          aria-hidden="true">
@@ -86,7 +114,8 @@ export default function Footer() {
                                     </svg>
                                     <span className="sr-only">TikTok page</span>
                                 </a>
-                                <a href="https://www.linkedin.com/company/nxt-wave-founders-inc/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <a target={'_blank'} href="https://www.linkedin.com/company/nxt-wave-founders/"
+                                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path
                                             d="M5.37214 24H0.396429V7.97674H5.37214V24ZM2.88161 5.79102C1.29054 5.79102 0 4.47317 0 2.8821C2.37147e-08 1.29063 1.29014 0.000488281 2.88161 0.000488281C4.47307 0.000488281 5.76321 1.29063 5.76321 2.8821C5.76321 4.47317 4.47214 5.79102 2.88161 5.79102ZM23.9946 24H19.0296V16.2C19.0296 14.341 18.9921 11.9571 16.4427 11.9571C13.8557 11.9571 13.4593 13.9767 13.4593 16.066V24H8.48893V7.97674H13.2611V10.1625H13.3307C13.995 8.90352 15.6177 7.57495 18.0386 7.57495C23.0743 7.57495 24 10.891 24 15.1982V24H23.9946Z"/>
@@ -94,16 +123,13 @@ export default function Footer() {
                                     <span className="sr-only">Linkedin page</span>
                                 </a></div>
                         </Grid>
-                        <Grid direction={"row"} item color={'white'} xs={5} md={4}>
-                        <Box justifyContent={"flex-end"} alignItems={"right"} height={"100%"}>
-                            <span className="iSpA-dU3">Copyright ©2023. Deep Data Detectives (D3).</span>
-                            <span className="iSpA-dU3">A flagship initiative of NxtWave Founders, Inc.</span>
-                            <span className="iSpA-dU3">(NxtWave), a 501(C)(3) Organization that is registered with
+                        <Grid textAlign={"end"} className={"iSpA-dU2"} xs={6} color={"white"} item>
+                            <Typography>Copyright ©2023. Deep Data Detectives (D3).</Typography>
+                            <Typography>A flagship initiative of NxtWave Founders, Inc.</Typography>
+                            <Typography>(NxtWave), a 501(C)(3) Organization that is registered with
                                 the IRS, EIN #
-                                84-3277794. </span>
-                            <span className="iSpA-dU3">All rights reserved.</span>
-                            </Box>
-
+                                84-3277794.</Typography>
+                            <Typography>All rights reserved.</Typography>
                         </Grid>
                     </Grid>
                 </Stack>
