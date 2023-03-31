@@ -15,11 +15,11 @@ function Story() {
 
         <Box className="grid-container">
             <Box>
-                <Typography fontSize={"x-large"}  paragraph>
+                <Typography fontSize={"x-large"} paragraph>
                     DEEP DATA DETECTIVES (D3) was founded with a mission to empower people to have a voice in the
                     development of AI to accelerate Global Goals by 2030.
                 </Typography>
-                <Typography fontSize={"x-large"}  paragraph>
+                <Typography fontSize={"x-large"} paragraph>
                     We recognize the rise of AI is undergoing a transformative moment in human history, but also
                     understand
                     the valid concerns about the impact that AI could have in society. Job displacement is a scenario
@@ -86,7 +86,8 @@ function Story() {
             </Box>
             <div style={{justifyItems: 'center'}} className="grid-container">
 
-                <Typography fontSize={"x-large"} className="underline centre text-blue-700 hover:text-black font-bold" paragraph
+                <Typography fontSize={"x-large"} className="underline centre text-blue-700 hover:text-black font-bold"
+                            paragraph
                             component={NavLink} to={"/contact"}><br/>
                     SPEAK TO A MEMBER OF OUR TEAM
                 </Typography>

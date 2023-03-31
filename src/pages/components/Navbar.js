@@ -48,7 +48,7 @@ export default function Navbar(props) {
 >
 
                     <button
-                        className="inline-flex bg-blue-900 mr-3 items-center p-1 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        className="inline-flex bg-blue-900 mr-3 items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         style={{zIndex: '1'}}
                         onClick={() => setNavbarOpen(false)}
                     >
