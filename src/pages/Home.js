@@ -35,7 +35,7 @@ const Home = () => {
     return (
 
 
-        <div id='' className='main-div'>
+        <div id='main' className='main-div'>
             {loading ? (<div className="spinner-container">
                 <PulseLoader color="#36D7B7" size={15}/>
             </div>) : (
