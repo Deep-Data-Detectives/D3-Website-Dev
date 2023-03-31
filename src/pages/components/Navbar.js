@@ -16,30 +16,40 @@ export default function Navbar(props) {
     const [isOverlapping, setIsOverlapping] = useState(false);
 
     const checkOverlap = () => {
-    const detectivesText = document.querySelector('.deep-data-text');
-    const waitlistButton = document.querySelector('.waitlist-button');
+        const detectivesText = document.querySelector('.deep-data-text');
+        const waitlistButton = document.querySelector('.waitlist-button');
+      
+        if (!detectivesText || !waitlistButton) {
+          return;
+        }
+      
+        const rect1 = detectivesText.getBoundingClientRect();
+        const rect2 = waitlistButton.getBoundingClientRect();
+      
+        const overlap =
+          rect1.right > rect2.left &&
+          rect1.left < rect2.right &&
+          rect1.top < rect2.bottom &&
+          rect1.bottom > rect2.top;
+      
+        setIsOverlapping(overlap);
+      };
+      
 
-    const rect1 = detectivesText.getBoundingClientRect();
-    const rect2 = waitlistButton.getBoundingClientRect();
-
-    const overlap =
-        rect1.right > rect2.left &&
-        rect1.left < rect2.right &&
-        rect1.top < rect2.bottom &&
-        rect1.bottom > rect2.top;
-
-    setIsOverlapping(overlap);
-    };
-
-    useEffect(() => {
-    checkOverlap();
-
-    window.addEventListener('resize', checkOverlap);
-
-    return () => {
-        window.removeEventListener('resize', checkOverlap);
-    };
-    }, []);
+      useEffect(() => {
+        checkOverlap();
+      
+        const handleResize = () => {
+          checkOverlap();
+        };
+      
+        window.addEventListener('resize', handleResize);
+      
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+      
 
     useEffect(() => {
         if (navbarOpen) {
@@ -67,7 +77,7 @@ export default function Navbar(props) {
             DEEP DATA DETECTIVES
           </span>
         </div>
-        <div className={"my-colour top-2 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>
+        <div className={"my-colour top-2 fixed right-12 pt-1 mr-2 transition-all ease-in-out duration-300"}>
         {!isOverlapping && (
                 <div>
                     <a
@@ -76,7 +86,7 @@ export default function Navbar(props) {
                     rel="noopener noreferrer"
                     >
                     <button
-                        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full sm:w-auto mr-3 waitlist-button"
+                        className="inline-flex items-center p-1 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full sm:w-auto waitlist-button"
                         style={{ zIndex: 1 }}
                         onClick={() => setNavbarOpen(false)}
                     >
@@ -96,7 +106,7 @@ export default function Navbar(props) {
                         className="button inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="navbar-default"
                         aria-expanded="false"
-                        style={{ position: "fixed", top: "9px", right: "10px"}}
+                        style={{ position: "fixed", top: "8px", right: "10px"}}
                         onClick={() => setNavbarOpen(!navbarOpen)}
                         >
                         <span className="sr-only">Open main menu</span>
@@ -117,7 +127,7 @@ export default function Navbar(props) {
                 </div>
                 <div
                     aria-expanded="false"
-                    className={" top-2 fixed right-2 p-5 z-10 transition-all ease-in-out duration-300" + (navbarOpen ? " translate-x-0" : " translate-x-full")}
+                    className={" top-1 fixed right-2 p-5 z-10 transition-all ease-in-out duration-300" + (navbarOpen ? " translate-x-0" : " translate-x-full")}
                     id="navbar-default"
                 >
                     <ul className="flex flex-col space-y-2">
