@@ -111,7 +111,7 @@ export default function Footer() {
                     </Grid>
 
                     <Grid pt={2} direction={"row"} justifyContent={"space-between"} container>
-                        <Grid xs={2} item>
+                    <Grid item xs={12} sm={12} md={12} lg={2} container justifyContent={"space-between"} alignItems={"right"}>
                             <div className="flex m-4 space-x-6 sm:justify-start">
                                 <a target={'_blank'} href="https://www.facebook.com/nxtwave.founders"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -158,7 +158,7 @@ export default function Footer() {
                                 </a></div>
                         </Grid>
                         <ThemeProvider theme={theme}>
-      <Grid textAlign={"end"} className={"iSpA-dU7"} xs={4} color={"white"} item>
+      <Grid textAlign={"end"} className={"iSpA-dU7"} xs={12} color={"white"} item>
         <Typography variant="body1">Copyright ©2023. Deep Data Detectives (D3).</Typography>
         <Typography variant="body1">A flagship initiative of NxtWave Founders, Inc.</Typography>
         <Typography variant="body1">(NxtWave), a 501(C)(3) Organization that is registered with

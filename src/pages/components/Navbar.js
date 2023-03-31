@@ -27,27 +27,24 @@ export default function Navbar(props) {
 
     return (<>
     
-        <body id={"top"} className=" antialiased absolute text-slate-500 dark:text-slate-400 dark:bg-slate-900 mt-0" >
-        <nav className="navbar">
-            
-            <div className="container flex justify-between items-center mx-auto max-w-8xl">
-                <Link to="/" className="flex items-center">
-                    <img style={{maxHeight: '55px'}} className="new-element" src={logo}/>
-                    <div className="ml-3 my-colour deep-data-text">
-                    <span className="block md:inline font-semibold">DEEP DATA DETECTIVES</span>
-                    </div>
-
-                </Link>
-                <div
-                    className={" my-colour top-2 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>
-
-                    <div>
-                    <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
->
-
+    <body id={"top"} className="antialiased absolute text-slate-500 dark:text-slate-400 dark:bg-slate-900 mt-0">
+  <nav className="navbar">
+    <div className="container flex justify-between items-center mx-auto max-w-8xl">
+      <Link to="/" className="flex items-center">
+        <img style={{ maxHeight: '55px' }} className="new-element" src={logo} />
+        <div className="ml-3 my-colour deep-data-text relative">
+          <span className="block md:inline font-semibold" style={{ zIndex: 2 }}>
+            DEEP DATA DETECTIVES
+          </span>
+        </div>
+      </Link>
+      <div className={"my-colour top-2 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>
+        <div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
                     <button
                         className="inline-flex bg-blue-900 mr-3 items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         style={{zIndex: '1'}}
@@ -57,8 +54,8 @@ export default function Navbar(props) {
                             style={{zIndex: '1'}}
                             className='text-white'>Join the Waitlist</span>
                     </button>
-                    </a>
-                    </div>
+          </a>
+        </div>
 
                     <button
                         data-collapse-toggle=""

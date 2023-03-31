@@ -512,13 +512,13 @@ font-family: "Inter", sans-serif;
 
 @media screen and (max-width: 768px) {
   .footer-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 640px) {
   .footer-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -528,12 +528,12 @@ font-family: "Inter", sans-serif;
 
 @media screen and (max-width: 768px) {
   .custom-typography {
-    font-size: 0.875rem; 
+    font-size: 0.8rem; 
   }
 }
 
 @media screen and (max-width: 640px) {
   .custom-typography {
-    font-size: 0.75rem; 
+    font-size: 0.7rem; 
   }
 }
