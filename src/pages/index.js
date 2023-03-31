@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from './Home.js';
 import Contact from "./Contact";
 import Pilots from "./Pilots";
+import Pilots2 from "./Pilots2";
+import Pilots3 from "./Pilots3";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Story from "./Story";
@@ -25,6 +27,8 @@ const Pages = () => {
                 <Route exact path="/" element={<Home/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/pilots" element={<Pilots/>}/>
+                <Route path="/pilots2" element={<Pilots2/>}/>
+                <Route path="/pilots3" element={<Pilots3/>}/>
                 <Route path="/story" element={<Story/>}/>
                 <Route path="/dollars" element={<Dollars/>}/>
                 <Route path="/internships" element={<Internships/>}/>

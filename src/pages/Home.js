@@ -12,7 +12,9 @@ import picture1 from "./images/Picture1.png";
 import picture2 from "./images/Picture2.png";
 import picture3 from "./images/Picture3.png";
 import picture4 from "./images/Picture4.png";
+import linkedin from "./images/linkedin.jpg";
 import playGame from "./images/High Res Images/PLAY T HE GAME.jpg";
+import qrcode from "./images/QR Code.png"
 import {HashLink} from 'react-router-hash-link';
 
 
@@ -96,7 +98,7 @@ const Home = () => {
             </span>
                             </div>
                             <br/><br/><br/><br/>
-                            <p className="my-colour font-extrabold md:text-3xl lg:text-4xl">Connecting One [D3] At A Time</p><br></br>
+                            <p className="my-colour font-extrabold md:text-3xl lg:text-5xl">Connecting One [D3] At A Time</p><br></br>
                         </div>
                         <table className='tables1 iSpA-dU2 mx-auto max-w-screen-xl text-center'
                                style={{borderCollapse: "collapse", margin: "auto"}}>
@@ -147,7 +149,7 @@ const Home = () => {
 
                     <div id={"whyD3"} className='navbarcolour text-white'>
                     <div className="py-8 mx-auto max-w-screen-xl text-center lg:py-16">
-                        <p className="mb-8 font-sizes">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p>
+                        <p className="font-extrabold md:text-3xl lg:text-5xl">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p><br></br>
                         <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
                         <div className="grid-container">
                             <div className="grid-item3 iSpA-dU2">
@@ -170,11 +172,11 @@ const Home = () => {
                     </div>
                 </div>
                 <br></br><br></br><br></br>
-                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center">
 
-                        <p className="my-colour font-extrabold md:text-3xl lg:text-4xl">Become a [D3]</p><br></br>
+                        <p className="my-colour font-extrabold md:text-3xl lg:text-5xl">Become a [D3]</p><br></br>
                         <span className=''>Join a global community of eco-warriors accelerating economic opportunity for all.</span>
-                        <h3 className="font-extrabold md:text-1xl lg:text-1xl"><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join The Waitlist </a> </h3>
+                        <h3 className="font-extrabold md:text-1xl lg:text-1xl"><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link' target="_blank" rel="noopener noreferrer"> Join The Waitlist </a> </h3>
 
 
                     <br/><br/>
@@ -183,7 +185,7 @@ const Home = () => {
                     <Progress/><br></br><br></br><br></br><br></br>
 
                     <div className="text-center">
-                        <h2 className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
+                        <h2 className="my-colour font-extrabold md:text-3xl lg:text-5xl">OUR IMPACT</h2><br></br>
                         <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2>
                         <br></br>
 
@@ -203,20 +205,19 @@ const Home = () => {
 
                     <Offer/>
                     <Typography className="text-center" gutterBottom>
-                        <div className='my-colour font-extrabold md:text-3xl lg:text-3xl'>
-                        MEET THE TEAM
+                        <div className='my-colour font-extrabold md:text-3xl lg:text-5xl'>MEET THE TEAM</div><br></br>
+                            
+                        <div className='' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                            <img src={linkedin} style={{maxHeight:'100vh'}} useMap="#teammembers" />
+                            <map name="teammembers">
+                            <area shape="rect" coords="250,10,400,200" href="https://www.linkedin.com/in/lbracamonte" target="_blank" rel="noopener noreferrer"/>
+                            <area shape="rect" coords="0,420,220,700" href="https://www.linkedin.com/in/joy-bugalia" target="_blank" rel="noopener noreferrer"/>
+                            <area shape="rect" coords="250,380,470,650" href="https://www.linkedin.com/in/anvita-chandrakar" target="_blank" rel="noopener noreferrer"/>
+                            <area shape="rect" coords="500,420,720,700" href="https://www.linkedin.com/in/jerrycc-/" target="_blank" rel="noopener noreferrer"/>
+                            </map>                            
                         </div>
-                    </Typography>
-                    <div className="text-center grid-container-center md:text-3xl">
-                        <div className="grid-item grid-item-center">
-                            <strong>C Luisa Bracamonte</strong>
-                            <p className='iSpA-dU5'>Founder & Principal Investigator</p>
-                            <p className='iSpA-dU5'>
-                                We will display the headshots and links to Linkedin Profiles for
-                                successful cohort graduates only
-                            </p>
-                        </div>
-                    </div>
+                        </Typography>
+
                     <br></br>
                     <Typography className="text-center"
                                 gutterBottom>
@@ -281,7 +282,7 @@ const Home = () => {
                         
                         <div style={{display: "flex", justifyContent: "center"}}>
                             <img
-                                src="https://drive.google.com/uc?export=view&id=1_kOT-tlnNT6wDzmXPPV-G4Yw5i_fzkW9"
+                                src={qrcode}
                                 alt="QR Code"
                                 width="200"
                                 height="200"

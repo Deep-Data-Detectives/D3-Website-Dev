@@ -9,7 +9,7 @@ import entrepreneurship from "../images/High Res Images/Entrepreneurship .png";
 
 const Offer = () => {
     return (<Stack py={5} id={"offer"} direction={"column"} alignItems={"center"} spacing={4}>
-        <span className="font-extrabold md:text-3xl lg:text-4xl my-colour">What We Offer</span>
+        <span className="my-colour font-extrabold md:text-3xl lg:text-5xl">What We Offer</span>
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Workforce Development</Typography>
         <Grid px={2} direction={"row"} container>
             <Grid p={1} xs={4} item>

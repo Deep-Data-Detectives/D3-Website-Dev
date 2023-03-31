@@ -10,7 +10,7 @@ import img4 from "../images/embrace equity for women.JPG"
 
 const Progress = () => {
     return (<div id={"progress"} className="py-8 mx-auto text-center lg:py-16">
-        <span className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR PROGRESS</span><br/><br/>
+        <span className="my-colour font-extrabold md:text-3xl lg:text-5xl">OUR PROGRESS</span><br/><br/>
         <div className="orange-box">
       <p className="white-text2 text-lg iSpA-dU">
         Maximizing Impact: <br></br>Connecting Good Intentions with <br></br> AI and Data-Driven Insights
@@ -49,7 +49,7 @@ const Progress = () => {
                 Inspiring storytelling feeds D3 players the knowledge to understand how
                 they fit in their roles presenting opportunities for user education in an
                 immersive game-play.{" "}
-                <HashLink className="my-colour underline" to="../pilots#second"><br></br>
+                <HashLink className="my-colour underline" to="../pilots2#second"><br></br>
                     Learn more
                 </HashLink>
                 </p>
@@ -62,7 +62,7 @@ const Progress = () => {
                 Every woman deserves a voice and the opportunity to be heard, respected,
                 and valued. Join our contest dedicated for women to share their stories,
                 ideas, and perspectives.{" "}
-                <HashLink className="my-colour underline" to="../pilots#third">
+                <HashLink className="my-colour underline" to="../pilots3#third">
                     Learn more
                 </HashLink>
                 </p>
