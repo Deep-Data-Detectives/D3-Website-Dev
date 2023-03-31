@@ -193,12 +193,12 @@ const Home = () => {
                         <br/><br/>
                     </div>
 
-                    <Progress/><br></br><br></br><br></br><br></br>
+                    <Progress/><br/><br/>
 
                     <div className="text-center">
-                        <h2 className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br></br>
+                        <h2 className="my-colour font-extrabold md:text-3xl lg:text-4xl">OUR IMPACT</h2><br/>
                         <h2 className="md:text-2xl lg:text-3xl">Be the first to get our full report this Summer</h2>
-                        <br></br>
+                        <br/>
 
                         <div className="container5">
                             <div className="aspect-ratio-wrapper"></div>
@@ -212,7 +212,7 @@ const Home = () => {
                     </div>
 
 
-                    <br/><br/><br/><br></br>
+                    <br/><br/><br/><br/>
 
                     <Offer/>
                     <Typography id={"meetTeam"} className="text-center" gutterBottom>
