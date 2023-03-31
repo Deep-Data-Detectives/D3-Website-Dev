@@ -35,20 +35,21 @@ export default function Navbar(props) {
         setIsOverlapping(overlap);
       };
       
+      
 
-      useEffect(() => {
+    useEffect(() => {
+    checkOverlap();
+    
+    const handleResize = () => {
         checkOverlap();
-      
-        const handleResize = () => {
-          checkOverlap();
-        };
-      
-        window.addEventListener('resize', handleResize);
-      
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+    }, []);
       
 
     useEffect(() => {
@@ -77,7 +78,7 @@ export default function Navbar(props) {
             DEEP DATA DETECTIVES
           </span>
         </div>
-        <div className={"my-colour top-2 fixed right-12 pt-1 mr-2 transition-all ease-in-out duration-300"}>
+        <div className={"my-colour top-1 fixed right-10 pt-1 transition-all ease-in-out duration-300"}>
         {!isOverlapping && (
                 <div>
                     <a
@@ -86,7 +87,7 @@ export default function Navbar(props) {
                     rel="noopener noreferrer"
                     >
                     <button
-                        className="inline-flex items-center p-1 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full sm:w-auto waitlist-button"
+                        className="inline-flex items-center pt-2 pr-2 pb-2 pl-2 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full mr-3 sm:w-auto waitlist-button"
                         style={{ zIndex: 1 }}
                         onClick={() => setNavbarOpen(false)}
                     >
@@ -106,7 +107,7 @@ export default function Navbar(props) {
                         className="button inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="navbar-default"
                         aria-expanded="false"
-                        style={{ position: "fixed", top: "8px", right: "10px"}}
+                        style={{ position: "fixed", top: "7px", right: "10px"}}
                         onClick={() => setNavbarOpen(!navbarOpen)}
                         >
                         <span className="sr-only">Open main menu</span>
