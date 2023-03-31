@@ -18,7 +18,6 @@ const Offer = () => {
                 <Box component={"img"} src={dfh} alt={"dfh"}/>
                 <Link
                                             target="_blank"
-                                            rel="noopener noreferrer"
                     alignSelf={"center"}
                     component={HashLink}
                     to={"/dollars#top"}><br></br>
@@ -28,7 +27,6 @@ const Offer = () => {
                 <Box component={"img"} src={internships} alt={"internships"}/>
                 <Link
                                             target="_blank"
-                                            rel="noopener noreferrer"
                     alignSelf={"center"}
                     component={HashLink}
                     to={"/internships#top"}><br></br>
@@ -38,7 +36,6 @@ const Offer = () => {
                 <Box component={"img"} src={fellowship} alt={"fellowship"}/>
                 <Link
                                             target="_blank"
-                                            rel="noopener noreferrer"
                     alignSelf={"center"}
                     component={HashLink}
                     to={"/fellowship#top"}><br></br>
