@@ -33,12 +33,12 @@ export default function Navbar(props) {
       <div className="flex items-center justify-between w-full">
         <Link to="/" className="flex items-center">
           <img style={{ maxHeight: '55px' }} className="new-element" src={logo} />
-          <div className="ml-3 my-colour deep-data-text">
-            <span className="block md:inline font-semibold">
-              DEEP DATA DETECTIVES
-            </span>
-          </div>
         </Link>
+        <div className="ml-3 my-colour deep-data-text z-10 relative">
+          <span className="block md:inline font-semibold">
+            DEEP DATA DETECTIVES
+          </span>
+        </div>
         <div className={"my-colour top-2 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>
           <div>
             <a
@@ -47,7 +47,7 @@ export default function Navbar(props) {
               rel="noopener noreferrer"
             >
               <button
-                className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full sm:w-auto"
+                className="inline-flex items-center p-1 text-sm text-gray-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 bg-blue-900 w-full"
                 style={{ zIndex: 1 }}
                 onClick={() => setNavbarOpen(false)}
               >
