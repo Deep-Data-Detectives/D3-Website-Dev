@@ -47,6 +47,9 @@ const Pilots = () => {
                     </table>
                     </div>
 
+                    <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-4xl dark:text-white">Key Takeaways</h1><br/><br/>
+
+
                     <div className="grid-container">
                         <div className="">
                         <h3 className="font-bold text-center"><b>Use of Inclusive Language</b></h3><br></br>
