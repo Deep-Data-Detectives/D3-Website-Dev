@@ -11,6 +11,7 @@ import floating from "./images/High Res Images/WITH THE HELP OF AI AND DATA.jpg"
 import picture1 from "./images/Picture1.png";
 import picture2 from "./images/Picture2.png";
 import picture3 from "./images/Picture3.png";
+import linkedin from "./images/linkedin.jpg";
 import picture4 from "./images/Picture4.png";
 import playGame from "./images/High Res Images/PLAY T HE GAME.jpg";
 import {HashLink} from 'react-router-hash-link';
@@ -25,12 +26,41 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        function resizeAreas() {
+          const image = document.getElementById('teamImage');
+          const map = document.getElementById('teamMap');
+          const originalWidth = 720;
+    
+          const scale = image.offsetWidth / originalWidth;
+          const areas = map.getElementsByTagName('area');
+    
+          for (let i = 0; i < areas.length; i++) {
+            const originalCoords = areas[i].dataset.originalCoords.split(',').map(Number);
+            const resizedCoords = originalCoords.map(coord => Math.round(coord * scale)).join(',');
+            areas[i].coords = resizedCoords;
+          }
+        }
+    
+        setTimeout(() => {
+          window.addEventListener('resize', resizeAreas);
+          window.addEventListener('load', resizeAreas);
+          resizeAreas(); // Call the function initially to set the correct coordinates
+        }, 600);
+    
+        return () => {
+          window.removeEventListener('resize', resizeAreas);
+          window.removeEventListener('load', resizeAreas);
+        };
+      }, []);
+
+    useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
         }, 500);
 
         return () => clearTimeout(timer);
     }, []);
+
 
     return (
 
@@ -201,26 +231,29 @@ const Home = () => {
                     <br/><br/><br/><br></br>
 
                     <Offer/>
-                    {/* <Typography className="text-center" gutterBottom>
+                    <Typography className="text-center" gutterBottom>
                         <div className='my-colour font-extrabold md:text-3xl lg:text-5xl'>MEET THE TEAM</div>
                         <br></br>
 
                         <div className='' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={linkedin} style={{maxHeight: '100vh'}} useMap="#teammembers"/>
-                            <map name="teammembers">
-                                <area shape="rect" coords="250,10,400,200"
-                                      href="https://www.linkedin.com/in/lbracamonte" target="_blank"
-                                      rel="noopener noreferrer"/>
-                                <area shape="rect" coords="0,420,220,700" href="https://www.linkedin.com/in/joy-bugalia"
-                                      target="_blank" rel="noopener noreferrer"/>
-                                <area shape="rect" coords="250,380,470,650"
-                                      href="https://www.linkedin.com/in/anvita-chandrakar" target="_blank"
-                                      rel="noopener noreferrer"/>
-                                <area shape="rect" coords="500,420,720,700" href="https://www.linkedin.com/in/jerrycc-/"
-                                      target="_blank" rel="noopener noreferrer"/>
+                            <img id="teamImage" src={linkedin} style={{maxWidth: '100%', height: 'auto'}} useMap="#teammembers" width="720"/>
+                            <map id="teamMap" name="teammembers">
+                                <area shape="rect" coords="250,10,400,200" data-original-coords="250,10,420,220"
+                                    href="https://www.linkedin.com/in/lbracamonte" target="_blank"
+                                    rel="noopener noreferrer"/>
+                                <area shape="rect" coords="0,420,220,700" data-original-coords="0,420,220,700"
+                                    href="https://www.linkedin.com/in/joy-bugalia"
+                                    target="_blank" rel="noopener noreferrer"/>
+                                <area shape="rect" coords="250,380,470,650" data-original-coords="250,380,470,650"
+                                    href="https://www.linkedin.com/in/anvita-chandrakar" target="_blank"
+                                    rel="noopener noreferrer"/>
+                                <area shape="rect" coords="500,420,720,700" data-original-coords="500,420,720,700"
+                                    href="https://www.linkedin.com/in/jerrycc-/" target="_blank"
+                                    rel="noopener noreferrer"/>
                             </map>
-                        </div>
-                    </Typography> */}
+                            </div>
+
+                    </Typography>
 
                     <br/>
 
@@ -263,7 +296,9 @@ const Home = () => {
                             </Typography>
                             <Typography className="text-center" variant="h6" gutterBottom>
                                 Help us continue our work.{" "}
-                                <HashLink className="" to="./donate#main">
+                                <HashLink className=""
+                                                                target="_blank"
+                                                                to="./donate#main">
                                     <button
                                         style={{
                                             backgroundColor: "orange",

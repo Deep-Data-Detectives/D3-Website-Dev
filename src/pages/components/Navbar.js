@@ -33,9 +33,10 @@ export default function Navbar(props) {
             <div className="container flex justify-between items-center mx-auto max-w-8xl">
                 <Link to="/" className="flex items-center">
                     <img style={{maxHeight: '55px'}} className="new-element" src={logo}/>
-                    <div className="ml-3 my-colour text-xl">
-                        <span className="block md:inline font-semibold sm:text-l md:text-l lg:text-xl" >DEEP DATA DETECTIVES</span>
+                    <div className="ml-3 my-colour deep-data-text">
+                    <span className="block md:inline font-semibold">DEEP DATA DETECTIVES</span>
                     </div>
+
                 </Link>
                 <div
                     className={" my-colour top-2 fixed right-12 pt-1 transition-all ease-in-out duration-300"}>

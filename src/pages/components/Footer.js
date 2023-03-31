@@ -3,9 +3,33 @@ import d3Logo from "../images/DEEP DATA DETECTIVES (D3) INITIATIVE LOGO_REVISED 
 import nxtLogo from "../images/NXTWAVE LOGO_UPDATED 02092023.png";
 import {Link} from "react-router-dom";
 import {HashLink} from "react-router-hash-link";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function Footer() {
-
+    const theme = createTheme({
+        typography: {
+            body1: {
+            fontSize: '0.9rem',
+            },
+        },
+        components: {
+            MuiTypography: {
+            variants: [
+                {
+                props: { variant: 'body1' },
+                style: {
+                    '@media (max-width: 768px)': {
+                    fontSize: '0.875rem',
+                    },
+                    '@media (max-width: 640px)': {
+                    fontSize: '0.75rem',
+                    },
+                },
+                },
+            ],
+            },
+        },
+        });
     return (<>
             <Box
                 component="footer" className="new-element"
@@ -31,19 +55,19 @@ export default function Footer() {
                                  component={"nav"}>
                                 <Stack component={"ul"} direction={"column"}>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2"
+                                        <HashLink className="hover:underline iSpA-dU7"
                                                   to='/#whyD3'>Why Deep Data Detectives (D3)</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='/#progress'>Our
+                                        <HashLink className="hover:underline iSpA-dU7" to='/#progress'>Our
                                             Progress</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='/#offer'>What We
+                                        <HashLink className="hover:underline iSpA-dU7" to='/#offer'>What We
                                             Offer</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2"
+                                        <HashLink className="hover:underline iSpA-dU7"
                                                   to='/#meetTeam'>Meet The Team</HashLink>
                                     </Typography>
                                 </Stack>
@@ -54,29 +78,29 @@ export default function Footer() {
                                  component={"nav"}>
                                 <Stack component={"ul"} direction={"column"}>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2"
+                                        <HashLink className="hover:underline iSpA-dU7"
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                   to='/contact#top'>Contact</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" 
+                                        <HashLink className="hover:underline iSpA-dU7" 
                                                                     target="_blank"
                                                                     rel="noopener noreferrer" to='./media#top'>Media</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" 
+                                        <HashLink className="hover:underline iSpA-dU7" 
                                                                     target="_blank"
                                                                     rel="noopener noreferrer" to='/pilots3#third'>Events</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2"
+                                        <HashLink className="hover:underline iSpA-dU7"
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                   to='./privacy#top'>Privacy</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" 
+                                        <HashLink className="hover:underline iSpA-dU7" 
                                                                     target="_blank"
                                                                     rel="noopener noreferrer" to='./diversity#top'>Diversity &
                                             Inclusion</HashLink>
@@ -86,8 +110,8 @@ export default function Footer() {
                         </Grid>
                     </Grid>
 
-                    <Grid pt={4} direction={"row"} justifyContent={"space-between"} container>
-                        <Grid xs={6} item>
+                    <Grid pt={2} direction={"row"} justifyContent={"space-between"} container>
+                        <Grid xs={2} item>
                             <div className="flex m-4 space-x-6 sm:justify-start">
                                 <a target={'_blank'} href="https://www.facebook.com/nxtwave.founders"
                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -133,14 +157,17 @@ export default function Footer() {
                                     <span className="sr-only">Linkedin page</span>
                                 </a></div>
                         </Grid>
-                        <Grid textAlign={"end"} className={"iSpA-dU2"} xs={6} color={"white"} item>
-                            <Typography>Copyright ©2023. Deep Data Detectives (D3).</Typography>
-                            <Typography>A flagship initiative of NxtWave Founders, Inc.</Typography>
-                            <Typography>(NxtWave), a 501(C)(3) Organization that is registered with
-                                the IRS, EIN #
-                                84-3277794.</Typography>
-                            <Typography>All rights reserved.</Typography>
-                        </Grid>
+                        <ThemeProvider theme={theme}>
+      <Grid textAlign={"end"} className={"iSpA-dU7"} xs={4} color={"white"} item>
+        <Typography variant="body1">Copyright ©2023. Deep Data Detectives (D3).</Typography>
+        <Typography variant="body1">A flagship initiative of NxtWave Founders, Inc.</Typography>
+        <Typography variant="body1">(NxtWave), a 501(C)(3) Organization that is registered with
+          the IRS, EIN #
+          84-3277794.</Typography>
+        <Typography variant="body1">All rights reserved.</Typography>
+      </Grid>
+    </ThemeProvider>
+
                     </Grid>
                 </Stack>
             </Box>

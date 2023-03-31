@@ -284,6 +284,15 @@ font-family: "Inter", sans-serif;
     line-height: 2;
   }
 
+  .iSpA-dU7 {
+    line-height: 110%;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "FreightText Pro", sans-serif;
+    /* color: var(--color-base-white); */
+    text-decoration: none;
+    line-height: 2;
+  }
 
   .grid-container {
     display: grid;
@@ -481,3 +490,50 @@ font-family: "Inter", sans-serif;
     }
   }
   
+.deep-data-text {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .deep-data-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .deep-data-text {
+    font-size: 1rem;
+  }
+}
+
+.footer-text {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+
+.custom-typography {
+  font-size: 1rem; 
+}
+
+@media screen and (max-width: 768px) {
+  .custom-typography {
+    font-size: 0.875rem; 
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .custom-typography {
+    font-size: 0.75rem; 
+  }
+}
