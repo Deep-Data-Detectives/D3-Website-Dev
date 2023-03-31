@@ -34,7 +34,7 @@ export default function Footer() {
             <Box
                 component="footer" className="new-element"
                 sx={{
-                    py: 5, px: 5, mt: '10px', backgroundColor: '#000099'
+                    py: 5, px: 2, mt: '10px', backgroundColor: '#000099'
                 }}
             >
                 <Stack direction={"column"} spacing={2}>
