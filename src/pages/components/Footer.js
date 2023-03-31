@@ -55,20 +55,30 @@ export default function Footer() {
                                 <Stack component={"ul"} direction={"column"}>
                                     <Typography color={"white"} component={"li"}>
                                         <HashLink className="hover:underline iSpA-dU2"
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
                                                   to='/contact#top'>Contact</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='./media#top'>Media</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" 
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer" to='./media#top'>Media</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='/pilots3#third'>Events</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" 
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer" to='/pilots3#third'>Events</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
                                         <HashLink className="hover:underline iSpA-dU2"
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
                                                   to='./privacy#top'>Privacy</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='./diversity#top'>Diversity &
+                                        <HashLink className="hover:underline iSpA-dU2" 
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer" to='./diversity#top'>Diversity &
                                             Inclusion</HashLink>
                                     </Typography>
                                 </Stack>
