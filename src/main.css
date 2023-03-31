@@ -471,13 +471,13 @@ font-family: "Inter", sans-serif;
   
   @media screen and (max-width: 480px) {
     .grid-item6 p {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   
   @media screen and (max-width: 360px) {
     .grid-item6 p {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   
