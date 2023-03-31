@@ -49,7 +49,7 @@ const Offer = () => {
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Entrepreneurship</Typography>
         <Box px={3} minWidth={"100%"} component={"img"} src={entrepreneurship} alt={"entrepreneurship"}/>
         <Typography p={1} bgcolor={"lightgray"} variant={"h4"} component={"h2"}>Partnerships</Typography>
-        <Link variant={"h5"} component={HashLink} to="/partnerships#top">
+        <Link target={'_blank'} variant={"h5"} component={"a"} href="/partnerships#top">
             EXPLORE MORE
         </Link>
     </Stack>);

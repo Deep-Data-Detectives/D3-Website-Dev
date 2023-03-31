@@ -14,7 +14,6 @@ import picture3 from "./images/Picture3.png";
 import picture4 from "./images/Picture4.png";
 import linkedin from "./images/linkedin.jpg";
 import playGame from "./images/High Res Images/PLAY T HE GAME.jpg";
-import qrcode from "./images/QR Code.png"
 import {HashLink} from 'react-router-hash-link';
 
 
@@ -74,14 +73,17 @@ const Home = () => {
 
                             <div
                                 className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                            <HashLink className="bg-blue-700 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-blue-500 dark:focus:ring-gray-800" to="../pilots2#second">              
-                                
+                                <HashLink
+                                    className="bg-blue-700 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-blue-500 dark:focus:ring-gray-800"
+                                    to="../pilots2#second">
+
                                     &nbsp;PLAY THE GAME
-                                    </HashLink>
-                                </div>
+                                </HashLink>
+                            </div>
                             <div>
             <span> <br></br>
-            <div className="my-colour font-extrabold md:text-3xl lg:text-5xl">MEET<br></br> <u>D</u>EEP <u>D</u>ATA <u>D</u>ETECTIVES (D3).</div><br/><br></br>
+            <div
+                className="my-colour font-extrabold md:text-3xl lg:text-5xl">MEET<br></br> <u>D</u>EEP <u>D</u>ATA <u>D</u>ETECTIVES (D3).</div><br/><br></br>
 
                 We are on a mission to empower people to unleashing the power of Data and AI to accelerate Global Goals 
                 <br></br><br></br>
@@ -98,66 +100,81 @@ const Home = () => {
             </span>
                             </div>
                             <br/><br/><br/><br/>
-                            <p className="my-colour font-extrabold md:text-3xl lg:text-5xl">Connecting One [D3] At A Time</p><br></br>
+                            <p className="my-colour font-extrabold md:text-3xl lg:text-5xl">Connecting One [D3] At A
+                                Time</p><br></br>
                         </div>
                         <div>
-                    <div className="grid-container">
-                        <div className="">
-                        <h3 className="font-bold text-center">RESILIENCE</h3>
-                        <p className="grid-item3 iSpA-dU2"><strong>Help Solve Community Problems</strong><br />
-                            Capacity Building to mitigate and solve real-world issues while having fun and knowing what matters!</p>
+                            <div className="grid-container">
+                                <div className="">
+                                    <h3 className="font-bold text-center">RESILIENCE</h3>
+                                    <p className="grid-item3 iSpA-dU2"><strong>Help Solve Community
+                                        Problems</strong><br/>
+                                        Capacity Building to mitigate and solve real-world issues while having fun and
+                                        knowing what matters!</p>
+                                </div>
+                                <div className="">
+                                    <h3 className="font-bold text-center">BREAK OUT OF POVERTY</h3>
+                                    <p className="grid-item3 iSpA-dU2"><strong>Connect With The Resources You
+                                        Need</strong><br/>
+                                        Technical Assistance for Community Assessments, Asset Mapping and Service
+                                        Networks.</p>
+                                </div>
+                                <div className="">
+                                    <h3 className="font-bold text-center">ECONOMIC OPPORTUNITY FOR ALL</h3>
+                                    <p className="grid-item3 iSpA-dU2"><strong>Beyond The Numbers</strong><br/>
+                                        We help you stay relevant, learn new skills. Get the recognition you deserve
+                                        while earning cash and rewards.</p>
+                                </div>
+                            </div>
+                            <br/><br/>
                         </div>
-                        <div className="">
-                        <h3 className="font-bold text-center">BREAK OUT OF POVERTY</h3>
-                        <p className="grid-item3 iSpA-dU2"><strong>Connect With The Resources You Need</strong><br />
-                            Technical Assistance for Community Assessments, Asset Mapping and Service Networks.</p>
-                        </div>
-                        <div className="">
-                        <h3 className="font-bold text-center">ECONOMIC OPPORTUNITY FOR ALL</h3>
-                        <p className="grid-item3 iSpA-dU2"><strong>Beyond The Numbers</strong><br />
-                            We help you stay relevant, learn new skills. Get the recognition you deserve while earning cash and rewards.</p>
-                        </div>
-                    </div>
-                    <br /><br />
-                    </div>
 
                         <br></br>
                     </div>
 
 
                     <div id={"whyD3"} className='navbarcolour text-white'>
-                    <div className="py-8 mx-auto max-w-screen-xl text-center lg:py-16">
-                        <p className="font-extrabold md:text-3xl lg:text-5xl">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p><br></br>
-                        <span className=''>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
-                        <div className="grid-container">
-                            <div className="grid-item3 iSpA-dU2">
-                                <h3>IMPACT</h3>
-                                Grounded on research that translates into the field to break through barriers and reduce inequality.
-                            </div>
-                            <div className="grid-item3 iSpA-dU2">
-                                <h3>SCALABILITY & SUSTAINABILITY</h3>
-                                The Initiative will go beyond our pilots to share our learnings and best practices with a global community.
-                            </div>
-                            <div className="grid-item3 iSpA-dU2">
-                                <h3>FEASIBILITY</h3>
-                                Executing in alignment with an ecosystem of technical and strategic partners.
-                            </div>
-                            <div className="grid-item3 iSpA-dU2">
-                                <h3>DATA & RESPONSIBILITY</h3>
-                                As AI shows great promise, Deep Data Detectives <Link className="underline text-blue-500 hover:text-black font-bold" to="/principles">principles</Link> align with human good intentions and values.
+                        <div className="py-8 mx-auto max-w-screen-xl text-center lg:py-16">
+                            <p className="font-extrabold md:text-3xl lg:text-5xl">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives
+                                (D3)</p><br></br>
+                            <span className=''>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
+                            <div className="grid-container">
+                                <div className="grid-item3 iSpA-dU2">
+                                    <h3>IMPACT</h3>
+                                    Grounded on research that translates into the field to break through barriers and
+                                    reduce inequality.
+                                </div>
+                                <div className="grid-item3 iSpA-dU2">
+                                    <h3>SCALABILITY & SUSTAINABILITY</h3>
+                                    The Initiative will go beyond our pilots to share our learnings and best practices
+                                    with a global community.
+                                </div>
+                                <div className="grid-item3 iSpA-dU2">
+                                    <h3>FEASIBILITY</h3>
+                                    Executing in alignment with an ecosystem of technical and strategic partners.
+                                </div>
+                                <div className="grid-item3 iSpA-dU2">
+                                    <h3>DATA & RESPONSIBILITY</h3>
+                                    As AI shows great promise, Deep Data Detectives <a target={'_blank'}
+                                                                                       className="underline text-blue-500 hover:text-black font-bold"
+                                                                                       href="/principles">principles</a> align
+                                    with human good intentions and values.
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <br></br><br></br><br></br>
-                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center">
+                    <br></br><br></br><br></br>
+                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center">
 
                         <p className="my-colour font-extrabold md:text-3xl lg:text-5xl">Become a [D3]</p><br></br>
                         <span className=''>Join a global community of eco-warriors accelerating economic opportunity for all.</span>
-                        <h3 className="font-extrabold md:text-1xl lg:text-1xl"><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link' target="_blank" rel="noopener noreferrer"> Join The Waitlist </a> </h3>
+                        <h3 className="font-extrabold md:text-1xl lg:text-1xl"><br></br> <a
+                            className=' underline text-blue-700 hover:text-black font-bold'
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'
+                            target="_blank" rel="noopener noreferrer"> Join The Waitlist </a></h3>
 
 
-                    <br/><br/>
+                        <br/><br/>
                     </div>
 
                     <Progress/><br></br><br></br><br></br><br></br>
@@ -173,65 +190,74 @@ const Home = () => {
                                 className="my-element5"
                                 src="https://drive.google.com/file/d/1YA50tYCoB-EZQk_wAcjDTmm3fUEGucff/preview"
                             />
-                            </div>
+                        </div>
 
 
                     </div>
 
-                    
+
                     <br/><br/><br/><br></br>
 
                     <Offer/>
                     <Typography className="text-center" gutterBottom>
-                        <div className='my-colour font-extrabold md:text-3xl lg:text-5xl'>MEET THE TEAM</div><br></br>
-                            
+                        <div className='my-colour font-extrabold md:text-3xl lg:text-5xl'>MEET THE TEAM</div>
+                        <br></br>
+
                         <div className='' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={linkedin} style={{maxHeight:'100vh'}} useMap="#teammembers" />
+                            <img src={linkedin} style={{maxHeight: '100vh'}} useMap="#teammembers"/>
                             <map name="teammembers">
-                            <area shape="rect" coords="250,10,400,200" href="https://www.linkedin.com/in/lbracamonte" target="_blank" rel="noopener noreferrer"/>
-                            <area shape="rect" coords="0,420,220,700" href="https://www.linkedin.com/in/joy-bugalia" target="_blank" rel="noopener noreferrer"/>
-                            <area shape="rect" coords="250,380,470,650" href="https://www.linkedin.com/in/anvita-chandrakar" target="_blank" rel="noopener noreferrer"/>
-                            <area shape="rect" coords="500,420,720,700" href="https://www.linkedin.com/in/jerrycc-/" target="_blank" rel="noopener noreferrer"/>
-                            </map>                            
+                                <area shape="rect" coords="250,10,400,200"
+                                      href="https://www.linkedin.com/in/lbracamonte" target="_blank"
+                                      rel="noopener noreferrer"/>
+                                <area shape="rect" coords="0,420,220,700" href="https://www.linkedin.com/in/joy-bugalia"
+                                      target="_blank" rel="noopener noreferrer"/>
+                                <area shape="rect" coords="250,380,470,650"
+                                      href="https://www.linkedin.com/in/anvita-chandrakar" target="_blank"
+                                      rel="noopener noreferrer"/>
+                                <area shape="rect" coords="500,420,720,700" href="https://www.linkedin.com/in/jerrycc-/"
+                                      target="_blank" rel="noopener noreferrer"/>
+                            </map>
                         </div>
-                        </Typography>
+                    </Typography>
 
                     <br></br>
                     <Typography className="text-center"
                                 gutterBottom>
-                                    <div className='md:text-3xl lg:text-2xl'>
-                                    Check
-                                    <Link className=" ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/story">
-                            Our Story
-                        </Link>
-                                    </div>
+                        <div className='md:text-3xl lg:text-2xl'>
+                            Check
+                            <Link className=" ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"
+                                  to="/story">
+                                Our Story
+                            </Link>
+                        </div>
 
-                    </Typography><br></br>
-                    <Typography className="text-center "
-                                gutterBottom>
-                        <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/contact">
-                            Speak to our team
-                        </Link>
-                    </Typography><br></br>
-                    <Typography className="text-center"
-                                gutterBottom>
-                        <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/media">
-                            MEDIA Page
-                        </Link>
-                    </Typography><br></br>
-                    <Typography className="text-center"
-                                gutterBottom>
-                        <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="">
-                            EVENTS Page
-                        </Link>
-                        
                     </Typography>
-                    <br></br><br></br>
+                    {/*<Typography className="text-center "*/}
+                    {/*            gutterBottom>*/}
+                    {/*    <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"*/}
+                    {/*          to="/contact">*/}
+                    {/*        Speak to our team*/}
+                    {/*    </Link>*/}
+                    {/*</Typography><br></br>*/}
+                    {/*<Typography className="text-center"*/}
+                    {/*            gutterBottom>*/}
+                    {/*    <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="/media">*/}
+                    {/*        MEDIA Page*/}
+                    {/*    </Link>*/}
+                    {/*</Typography><br></br>*/}
+                    {/*<Typography className="text-center"*/}
+                    {/*            gutterBottom>*/}
+                    {/*    <Link className="underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl" to="">*/}
+                    {/*        EVENTS Page*/}
+                    {/*    </Link>*/}
+
+                    {/*</Typography>*/}
+                    <br/><br/>
                     <Typography className="text-center" gutterBottom>
                         <div className="my-colour font-extrabold md:text-3xl lg:text-3xl">
-                    Ready To Join Forces
-                    </div>
-                    </Typography><br></br>
+                            Ready To Join Forces
+                        </div>
+                    </Typography><br/>
                     <Typography className="text-center" variant="h6" gutterBottom>
                         Help us continue our work.{" "}
                         <HashLink className="" to="./donate#main">
@@ -255,21 +281,25 @@ const Home = () => {
                                 Donate Today
                             </button>
                         </HashLink>
-                        <div></div>
-                        <br></br>
-                        
-                        <div style={{display: "flex", justifyContent: "center"}}>
-                            <img
-                                src={qrcode}
-                                alt="QR Code"
-                                width="200"
-                                height="200"
-                            />
-                        </div><br></br>
-                        <h3 className="font-extrabold md:text-2xl lg:text-2xl"><br></br> <a className=' underline text-blue-700 hover:text-black font-bold' href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join The Waitlist </a> </h3>
 
-                    </Typography><br></br>
-                    
+                        <br/>
+
+                        {/*<div style={{display: "flex", justifyContent: "center"}}>*/}
+                        {/*    <img*/}
+                        {/*        src={qrcode}*/}
+                        {/*        alt="QR Code"*/}
+                        {/*        width="200"*/}
+                        {/*        height="200"*/}
+                        {/*    />*/}
+                        {/*</div>*/}
+                        <br/>
+                        <h3 className="font-extrabold md:text-2xl lg:text-2xl"><br/> <a
+                            className=' underline text-blue-700 hover:text-black font-bold'
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSckIXp1ZCrYR-J79on53FF9pAf4iH3sV83z5SE79wYDE34wCg/viewform?usp=sf_link'> Join
+                            The Waitlist </a></h3>
+
+                    </Typography><br/>
+
 
                 </section>)}
         </div>);

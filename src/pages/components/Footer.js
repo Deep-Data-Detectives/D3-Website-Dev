@@ -61,7 +61,7 @@ export default function Footer() {
                                         <HashLink className="hover:underline iSpA-dU2" to='./media#top'>Media</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
-                                        <HashLink className="hover:underline iSpA-dU2" to='/'>Events</HashLink>
+                                        <HashLink className="hover:underline iSpA-dU2" to='/pilots3#third'>Events</HashLink>
                                     </Typography>
                                     <Typography color={"white"} component={"li"}>
                                         <HashLink className="hover:underline iSpA-dU2"
