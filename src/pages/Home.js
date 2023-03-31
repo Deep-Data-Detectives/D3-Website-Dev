@@ -35,7 +35,7 @@ const Home = () => {
     return (
 
 
-        <div id='main' className='main-div'>
+        <div id='' className='main-div'>
             {loading ? (<div className="spinner-container">
                 <PulseLoader color="#36D7B7" size={15}/>
             </div>) : (
@@ -249,11 +249,11 @@ const Home = () => {
                         <Grid item xs={4}>
                             <Typography textAlign={"center"} fontWeight={"bolder"} fontSize={'x-large'}>
                                 Check
-                                <Link
+                                <HashLink
                                     className="ml-2 underline text-blue-700 hover:text-black md:text-3xl lg:text-2xl"
-                                    to="/story">
+                                    to="/story#main">
                                     Our Story
-                                </Link>
+                                </HashLink>
                             </Typography></Grid>
                         <Grid item xs={4}>
                             <Typography className="text-center" gutterBottom>

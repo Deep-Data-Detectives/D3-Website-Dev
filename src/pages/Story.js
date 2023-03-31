@@ -6,7 +6,7 @@ import d3game from "./images/High Res Images/D3 Game App.png";
 import {NavLink} from "react-router-dom";
 
 function Story() {
-    return (<Container maxWidth="100%"><br/><br/><br/>
+    return (<Container id='main' maxWidth="100%"><br/><br/><br/>
         <Stack direction={"column"} spacing={4}>
             <Grid alignItems={"center"} container>
                 <Grid item xs={6}><Box p={2} component="img" src={ourStory} alt="Our Story"/></Grid>
