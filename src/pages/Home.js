@@ -201,7 +201,7 @@ const Home = () => {
                     <br/><br/><br/><br></br>
 
                     <Offer/>
-                    <Typography className="text-center" gutterBottom>
+                    {/* <Typography className="text-center" gutterBottom>
                         <div className='my-colour font-extrabold md:text-3xl lg:text-5xl'>MEET THE TEAM</div>
                         <br></br>
 
@@ -220,7 +220,7 @@ const Home = () => {
                                       target="_blank" rel="noopener noreferrer"/>
                             </map>
                         </div>
-                    </Typography>
+                    </Typography> */}
 
                     <br/>
 
