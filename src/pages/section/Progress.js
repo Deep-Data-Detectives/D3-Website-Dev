@@ -28,21 +28,21 @@ const Progress = () => {
             className="font-bold md:text-3xl lg:text-4xl">Breaking New Ground Into Research With Three Pilots</span><br></br><br/>
 
         <div className="grid-container ">
-            <div className="grid-item iSpA-dU2">
+            <div className="grid-item ">
                 <strong><h3>Pilot 1: D3 Adventures</h3></strong><br></br>
                 <img className="my-element" src={img2} alt="D3 Adventures"/><br/>
-                <p className="iSpA-dU2" style={{justifyContent: "center"}}>
+                <p className="" style={{justifyContent: "center"}}>
                     (D3) Adventures is a Prize Winner in the Designing for Digital Thriving
                     Challenge hosted by @ideo @riotgames @FairPlayA @CooneyCenter @hopelab
                     @scefdn.<br></br><br></br>
                     We celebrate small wins and recognize our D3s with rewards and economic opportunities.
                 </p><br/>
-                <HashLink className="my-colour underline iSpA-dU2" to="../pilots#first">
+                <HashLink className="my-colour underline " to="../pilots#first">
                     Learn about
                 </HashLink>{" "}
                 our Impact and Assessment.
             </div>
-            <div className="grid-item iSpA-dU2">
+            <div className="grid-item ">
                 <strong><h3>Pilot 2: [D3s] Everywhere!</h3></strong><br></br>
                 <p>If you can see it, you can live it!</p><br></br>
                 <img className="my-element" src={img3} alt="[D3s] Everywhere!"/>
@@ -55,7 +55,7 @@ const Progress = () => {
                 </HashLink>
                 </p>
             </div>
-            <div className="grid-item iSpA-dU2">
+            <div className="grid-item ">
                 <strong><h3>Pilot 3: D3 Queens Adventures</h3></strong><br></br>
                 <p>Embrace Equity!</p><br></br>
                 <img className="my-element" src={img4} alt="D3 Queens Adventures"/><br/>
@@ -70,7 +70,7 @@ const Progress = () => {
             </div>
         </div>
 
-        <span className="iSpA-dU2">Deep Data Detectives (D3) is a flagship initiative of the <a
+        <span className="">Deep Data Detectives (D3) is a flagship initiative of the <a
             className="my-colour underline" target={'_blank'} href="https://nxtwavefounders.com/">NxtWave</a>, a 501 (c)(3) organization working on global economic mobility.</span><br/>
 
     </div>)

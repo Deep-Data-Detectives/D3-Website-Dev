@@ -13,7 +13,7 @@ const Pilots = () => {
         <section>
             <div id='second' className="py-20 px-4 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
 
-                <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Welcome to [D3s] Everywhere! Game</h1><br/><br/>
+                <h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Pilot 2: Welcome to [D3s] Everywhere! Game</h1><br/><br/>
                 
                 <div id=''>
 

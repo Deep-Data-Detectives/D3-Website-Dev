@@ -48,7 +48,7 @@ const Home = () => {
                         rightText={floating}
                     /><br></br>
                     <img src={playGame} alt={"game"}/>
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 iSpA-dU4">
                         {/*<h1 className="my-colour font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Driving*/}
                         {/*    Climate Action and Economic*/}
                         {/*    Prosperity for All with Data and AI</h1><br/>*/}
@@ -74,7 +74,7 @@ const Home = () => {
 
                             <div
                                 className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                            <HashLink className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800" to="../pilots2#second">              
+                            <HashLink className="bg-blue-700 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 hover:bg-blue-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-blue-500 dark:focus:ring-gray-800" to="../pilots2#second">              
                                 
                                     &nbsp;PLAY THE GAME
                                     </HashLink>
@@ -94,63 +94,41 @@ const Home = () => {
                 </div><br></br>
                 <div><p></p></div>
 
-            <span className='iSpA-dU2'>We envision a world where everyone can have a seat at the table to discover the right data and use AI to create jobs, learn new skills and help communities be more resilient.</span>
+            <span className=''>We envision a world where everyone can have a seat at the table to discover the right data and use AI to create jobs, learn new skills and help communities be more resilient.</span>
             </span>
                             </div>
                             <br/><br/><br/><br/>
                             <p className="my-colour font-extrabold md:text-3xl lg:text-5xl">Connecting One [D3] At A Time</p><br></br>
                         </div>
-                        <table className='tables1 iSpA-dU2 mx-auto max-w-screen-xl text-center'
-                               style={{borderCollapse: "collapse", margin: "auto"}}>
-                            <thead>
-                            <tr>
-                                <th style={{
-                                    padding: "10px", verticalAlign: "top"
-                                }}>RESILIENCE
-                                </th>
-                                <th style={{padding: "10px", verticalAlign: "top"}}>BREAK OUT OF
-                                    POVERTY
-                                </th>
-                                <th style={{padding: "10px", verticalAlign: "top"}}>ECONOMIC
-                                    OPPORTUNITY FOR ALL
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr className=''>
-                                <td style={{
-                                    padding: "10px", verticalAlign: ""
-                                }}><strong>Help Solve Community
-                                    Problems</strong><br></br>
+                        <div>
+                    <div className="grid-container">
+                        <div className="">
+                        <h3 className="font-bold text-center">RESILIENCE</h3>
+                        <p className="grid-item3 iSpA-dU2"><strong>Help Solve Community Problems</strong><br />
+                            Capacity Building to mitigate and solve real-world issues while having fun and knowing what matters!</p>
+                        </div>
+                        <div className="">
+                        <h3 className="font-bold text-center">BREAK OUT OF POVERTY</h3>
+                        <p className="grid-item3 iSpA-dU2"><strong>Connect With The Resources You Need</strong><br />
+                            Technical Assistance for Community Assessments, Asset Mapping and Service Networks.</p>
+                        </div>
+                        <div className="">
+                        <h3 className="font-bold text-center">ECONOMIC OPPORTUNITY FOR ALL</h3>
+                        <p className="grid-item3 iSpA-dU2"><strong>Beyond The Numbers</strong><br />
+                            We help you stay relevant, learn new skills. Get the recognition you deserve while earning cash and rewards.</p>
+                        </div>
+                    </div>
+                    <br /><br />
+                    </div>
 
-                                    Capacity Building to mitigate and solve real-world issues while having fun and
-                                    knowing
-                                    what matters!
-                                </td>
-                                <td style={{padding: "10px", verticalAlign: "top"}}><strong>Connect
-                                    With The Resources You
-                                    Need</strong><br></br>
-
-                                    Technical Assistance for Community Assessments, Asset Mapping and Service Networks.
-                                </td>
-                                <td style={{padding: "10px", verticalAlign: "top"}}><strong>Beyond
-                                    The
-                                    Numbers</strong><br></br>
-
-                                    We help you stay relevant, learn new skills. Get the recognition you deserve while
-                                    earning cash and rewards.
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <br></br><br/>
+                        <br></br>
                     </div>
 
 
                     <div id={"whyD3"} className='navbarcolour text-white'>
                     <div className="py-8 mx-auto max-w-screen-xl text-center lg:py-16">
                         <p className="font-extrabold md:text-3xl lg:text-5xl">Why <u>D</u>eep <u>D</u>ata <u>D</u>etectives (D3)</p><br></br>
-                        <span className='iSpA-dU2'>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
+                        <span className=''>We believe Data and AI can play a role in helping accelerate progress towards the Global Goals for everyone, everywhere.</span><br/><br/>
                         <div className="grid-container">
                             <div className="grid-item3 iSpA-dU2">
                                 <h3>IMPACT</h3>

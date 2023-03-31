@@ -56,23 +56,25 @@ const Donate = () => {
                             <strong className='underline text-blue-700 hover:text-black font-bold font-bold md:text-3xl lg:text-3xl'>BECOME A DONOR</strong>
                             </a><br></br><br></br>
 
-
-                            <div className="flex flex-row justify-center">
-
-                                <div className="grid-item2 iSpA-dU2 w-full h-full">
-                                  <p>
-                                    <img src={donation}
-                                    className='my-element'
-                                    style={{maxHeight:'500px'}}
-                                    ></img>
-                                  </p>
-                                </div>
-                                <div className="grid-item2 iSpA-dU2 w-full h-full justify-center">
-                                  <p>
-                                  Our backers, donors and sponsors are mission-aligned and are committed to making a positive impact in the world. We would love to hear from you and continue the conversation. Together, we can make a real difference and help to accelerate global goals.
-                                  </p>
-                                </div>
-                                </div><br></br><br></br>
+                            <div className="grid-container6">
+                          <div className="grid-item6">
+                            <img
+                              className="my-element right"
+                              src={donation}
+                              alt="Image 1"
+                              style={{ width: '60%' }}
+                            />
+                          </div>
+                          <div className="grid-item6">
+                            <p>
+                              Our backers, donors, and sponsors are mission-aligned and are
+                              committed to making a positive impact in the world. We would love to
+                              hear from you and continue the conversation. Together, we can make a
+                              real difference and help to accelerate global goals.
+                            </p>
+                          </div>
+                        </div><br></br><br></br><br></br>
+      
 
                             {/* <p className='iSpA-dU5'>
                             <a  href="https://www.paypal.com/donate?hosted_button_id=K4KPD2FK2HSMS">
@@ -108,15 +110,15 @@ const Donate = () => {
                         
 
                           <strong className='my-colour font-bold md:text-3xl lg:text-3xl'>BECOME A SPONSOR</strong>
-                          <div className="flex items-center gridContainer2 space-y-5 mx-auto">
-                            <div className="pl-20 iSpA-dU2">
+                          <div className="flex items-center grid-container6 space-y-5 mx-auto">
+                            <div className="pl-20">
                             <a target={'_blank'} href="https://opencollective.com/deepdatadetectives">
                                 <p>
                                     <img src={openc} style={{ maxHeight: '250px' }}/>
                                 </p>
                                 </a>
                             </div>
-                            <div className="iSpA-dU2 items-center pr-20 ">
+                            <div className="items-center pr-20 ">
                                 <p>
                                     Let's work together to build a brighter tomorrow for all, everywhere!
                                 </p>

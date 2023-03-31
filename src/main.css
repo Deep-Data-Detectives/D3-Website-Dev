@@ -443,4 +443,19 @@ font-family: "Inter", sans-serif;
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
   }
   
+  .grid-container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .grid-item6 {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
