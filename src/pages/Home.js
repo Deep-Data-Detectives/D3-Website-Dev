@@ -238,13 +238,13 @@ const Home = () => {
                         <div className='' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                             <img id="teamImage" src={linkedin} style={{maxWidth: '100%', height: 'auto'}} useMap="#teammembers" width="720"/>
                             <map id="teamMap" name="teammembers">
-                                <area shape="rect" coords="250,10,400,200" data-original-coords="250,10,420,220"
+                                <area shape="rect" coords="250,10,460,200" data-original-coords="250,10,460,220"
                                     href="https://www.linkedin.com/in/lbracamonte" target="_blank"
                                     rel="noopener noreferrer"/>
-                                <area shape="rect" coords="0,420,220,700" data-original-coords="0,420,220,700"
+                                <area shape="rect" coords="0,420,230,700" data-original-coords="0,420,230,700"
                                     href="https://www.linkedin.com/in/joy-bugalia"
                                     target="_blank" rel="noopener noreferrer"/>
-                                <area shape="rect" coords="250,380,470,650" data-original-coords="250,380,470,650"
+                                <area shape="rect" coords="255,380,455,650" data-original-coords="255,380,455,650"
                                     href="https://www.linkedin.com/in/anvita-chandrakar" target="_blank"
                                     rel="noopener noreferrer"/>
                                 <area shape="rect" coords="500,420,720,700" data-original-coords="500,420,720,700"
